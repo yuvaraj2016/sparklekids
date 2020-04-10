@@ -42,3 +42,5 @@ Route::get('contact-form', 'ContactController@getContact');
 Route::post('contact-form', 'ContactController@saveContact');
 
 Route::get('/gallery','AlbumController@index');
+
+Route::get('/albums/{id}','PhotoController@index');

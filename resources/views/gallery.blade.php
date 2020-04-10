@@ -3,7 +3,7 @@
     @extends('master')
 
     @section('content')
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 
     {{-- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
       <div class="overlay"></div>
@@ -16,16 +16,6 @@
         </div>
       </div>
     </section> --}}
-	<div class="row">
-		<nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Library</li>
-            </ol>
-          </nav>
-
-	</div>
-
    <!-- <section class="ftco-gallery">
     	<div class="container-wrap">
             <div class="text-center heading-section ftco-animate">
@@ -133,15 +123,15 @@
 
                @foreach($albums as $album)
                {{-- @dd($albums) --}}
-               <a href="#" class="album">
+            <a href="{{ url('albums/'.$album->id) }}" class="album">
                 <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
 
-                    <div style="text-align:center"><b>{{ $album->album_name }}</b></div>
+                    <div style="text-align:center" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
                     <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light">
                     <img class="img-fluid" src="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" alt="">
                     </a>
                     {{-- <address> --}}
-                        <p>{{ $album->album_description }}</p>
+                        <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
 
                     {{-- </address> --}}
                     </div>
