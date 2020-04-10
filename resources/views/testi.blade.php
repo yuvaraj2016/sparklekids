@@ -57,12 +57,7 @@
 
 
                 </div>
-                <div class="row justify-content-center">
-                    <div class="pagination">
-                        {{ $testimonials->links() }}
-                     </div>
 
-                </div>
             </div>
 
     </section>

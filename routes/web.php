@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\TestimonialsController;
+
 Route::get('/', function () {
     return view('index');
 });
@@ -23,12 +25,8 @@ Route::get('/curriculam_summary', function () {
 Route::get('/contact_form', function () {
     return view('contact_form');
 });
-Route::get('/testimonial', function () {
-    return view('testimonial');
-});
-// Route::get('/gallery', function () {
-//     return view('gallery');
-// });
+Route::get('/testimonial','TestimonialsController@index');
+Route::get('/testimonial/{id}','TestimonialsController@show');
 Route::get('/test_children', function () {
     return view('test_children');
 });
