@@ -4,8 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Response;
+
 use Auth;
 use Session;
+use Image;
+
+use Illuminate\Support\Facades\Storage;
 
 use App\Http\Controllers\Controller;
 use GuzzleHttp\Client;
@@ -88,4 +93,20 @@ class PhotoController extends Controller
         return $paginatedItems;
     }
 
+    public function imageresize($path)
+    {
+
+        $imgpath = 'http://restschool.hridham.com/storage/photos/'.$path;
+        Image::make($imgpath)->fit('250','250')
+            // ->fit('250','250', function ($constraint) {
+            //     $constraint->upsize();
+            //     $constraint->aspectRatio();
+            // })
+            ->save(storage_path()."/app/public/photos/".$path, 80);
+
+        // Return the thumbnail url
+        // return Storage::url("photos/".$path);
+
+
+    }
 }

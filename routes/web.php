@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Response;
+
 Route::get('/', function () {
     return view('index');
 });
@@ -44,3 +46,6 @@ Route::post('contact-form', 'ContactController@saveContact');
 Route::get('/gallery','AlbumController@index');
 
 Route::get('/albums/{id}','PhotoController@index');
+
+
+// Route::get('imager/{src?}', 'PhotoController@imageresize');
