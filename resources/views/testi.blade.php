@@ -28,9 +28,9 @@
                 @foreach($testimonials as $testimonial)
                 {{-- @dd($albums) --}}
 
-                <div class="col-md-6 col-lg-4 ftco-animate">
+                <div class="col-md-6 col-lg-8 offset-lg-2 offset-md-3 ftco-animate">
                     <div class="blog-entry">
-                      <a href="{{ url('testimonial/'.$testimonial->id)}}" class="block-20 d-flex align-items-end" style="background-image: url('http://restschool.hridham.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
+                      <a href="{{ url('http://restschool.hridham.com/storage/testimonials_picture/'.$testimonial->testimonial_image)}}" class="block-20 d-flex align-items-end" style="background-image: url('http://restschool.hridham.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
                                         <div class="meta-date text-center p-2">
                                         <?php
                                               $date= explode('-',$testimonial->testimonial_date);
@@ -42,12 +42,8 @@
                       </a>
                       <div class="text bg-white p-4">
                         <h3 class="heading">{{ $testimonial->testimonial_title }}</h3>
-                        <p>{{ str_limit(strip_tags($testimonial->testimonial_desc), 120) }}</p>
-                        @if (strlen($testimonial->testimonial_desc)>120)
-                        <div class="d-flex align-items-center mt-4">
-                            <p class="mb-0 offset-2"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                        </div>
-                        @endif
+                        <p>{{ $testimonial->testimonial_desc }}</p>
+
 
                       </div>
                     </div>
