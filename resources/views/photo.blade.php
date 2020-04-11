@@ -55,6 +55,7 @@
                   </a>
                </div>-->
                {{-- <div class="container my-4" style="margin-bottom:50px;"> --}}
+
                @if(count($photos)==0)
 
                 <div class="row items gts justify-content-center align-items-center">
@@ -73,9 +74,10 @@
 
                <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center">
 
+                    {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
 
-                   <a href="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" class="fancylight" data-fancybox-group="light">
-                   <img class="img-fluid img-responsive" src="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" alt="" height="100px">
+                   <a href="{{ url('storage/photos/'.$photo->photo)  }}" class="fancylight" data-fancybox-group="light">
+                   <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
                    </a>
 
                      <p>{{ $photo->photo_description }}</p>
@@ -84,7 +86,11 @@
                 </div>
 
 
+
+
                 @endforeach
+
+                {{-- <img src="{{url('imager/http://restschool.hridham.com/storage/photos/IMG-20200224-WA0016_1586330222.jpg') }}"> --}}
             </div>
             <br/>
                 @endif

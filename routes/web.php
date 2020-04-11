@@ -11,7 +11,11 @@
 |
 */
 
+<<<<<<< HEAD
 use App\Http\Controllers\TestimonialsController;
+=======
+use App\Http\Response;
+>>>>>>> 3ce6937f6026c01ece3aec86433ba06156b93dd6
 
 Route::get('/', function () {
     return view('index');
@@ -42,3 +46,6 @@ Route::post('contact-form', 'ContactController@saveContact');
 Route::get('/gallery','AlbumController@index');
 
 Route::get('/albums/{id}','PhotoController@index');
+
+
+// Route::get('imager/{src?}', 'PhotoController@imageresize');
