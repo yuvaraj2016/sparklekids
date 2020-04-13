@@ -1125,7 +1125,86 @@ text-shadow: 0 0 3px #FF0000;
      </div>
 
 </section>
-<br>
+<section>
+    <div class=" heading-section ftco-animate">
+        <h2 class="mb-4 text-center ptitle" >Gallery</h2>
+
+      </div>
+    <div class="container">
+
+        <!--<div class="portfolio-menu mt-2 mb-4">
+           <ul>
+              <li class="btn btn-outline-dark active" data-filter="*">All</li>
+              <li class="btn btn-outline-dark" data-filter=".gts">Childran</li>
+              <li class="btn btn-outline-dark" data-filter=".lap">Course</li>
+              <li class="btn btn-outline-dark text" data-filter=".selfie">Teachers</li>
+           </ul>
+        </div>-->
+        <div class="portfolio-item row">
+         <!--  <div class="item gts col-lg-3 col-md-4 col-6 col-sm ">
+
+           <a href="{{ url('gallery')}}" class="fancylight" data-fancybox-group="light">
+              <img class="img-fluid" src="images/image_6.jpg" alt="">
+
+              <div class="pad">Course</div>
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="{{ url('gallery')}}" class="fancylight" data-fancybox-group="light">
+              <img class="img-fluid" src="images/image_1.jpg" alt="">
+              <div class="pad">Childran</div>
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="{{ url('gallery')}}" class="fancylight " data-fancybox-group="light">
+              <img class="img-fluid" src="images/image_2.jpg" alt="">
+              <div class="pad">Sports</div>
+
+              </a>
+           </div>
+           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+              <a href="{{ url('gallery')}}" class="fancylight " data-fancybox-group="light">
+              <img class="img-fluid" src="images/image_3.jpg" alt="">
+              <div class="pad">Teacher</div>
+              </a>
+           </div>-->
+
+           {{-- /*resize image using css code* --}}
+
+           {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
+           @foreach($albums as $album)
+           {{-- @dd($albums) --}}
+           {{ app()->call('App\Http\Controllers\homeController@imageresize',['src'=>$album->cover_picture])}}
+        <a href="{{ url('albums/'.$album->id) }}" class="album">
+            <div class="item gts col-lg-3 col-md-3 col-6 col-sm" style="border:3px solid #1EAAF1; padding:0px; margin-top:15px;">
+
+                <div style="text-align:center;" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
+                <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light" style="margin-left:25px;">
+                <img class="img-fluid" src="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" alt="">
+                </a>
+                {{-- <address> --}}
+              {{-- @if(!is_null($album->album_description)) --}}
+
+                    <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
+
+                {{-- </address> --}}
+                </div>
+            {{-- @endif --}}
+            </a>
+            @endforeach
+
+
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="pagination">
+                {{ $albums->links() }}
+             </div>
+
+        </div>
+     </div>
+
+</section>
 	<!--	<section class="ftco-gallery">
     	<div class="container-wrap">
             <div class=" heading-section ftco-animate">
