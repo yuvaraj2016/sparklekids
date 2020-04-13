@@ -11,8 +11,8 @@
 |
 */
 
-use App\Http\Controllers\TestimonialsController;
-use App\Http\Response;
+// use App\Http\Controllers\TestimonialsController;
+// use App\Http\Response;
 
 Route::get('/', function () {
     return view('index');
@@ -27,22 +27,30 @@ Route::get('/contact_form', function () {
     return view('contact_form');
 });
 Route::get('/testimonial','TestimonialsController@index');
+
 Route::get('/testimonial/{id}','TestimonialsController@show');
+
 Route::get('/test_children', function () {
     return view('test_children');
 });
+
 Route::get('/test_teacher', function () {
     return view('test_teacher');
 });
+
 Route::get('/test_sportsr', function () {
     return view('test_sports');
 });
+
 Route::get('contact-form', 'ContactController@getContact');
+
 Route::post('contact-form', 'ContactController@saveContact');
 
 Route::get('/gallery','AlbumController@index');
 
 Route::get('/albums/{id}','PhotoController@index');
+
+Route::get('/photos/{id}','PhotoController@show');
 
 
 // Route::get('imager/{src?}', 'PhotoController@imageresize');

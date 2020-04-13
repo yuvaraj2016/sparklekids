@@ -11,10 +11,10 @@
 
 
         <div class="heading-section ftco-animate">
-            {{-- @dd($albumdata); --}}
+            {{-- @dd($photodetails[0]->photo); --}}
 
 
-                <h2 class="mb-4 text-center" >{{ $albumdata[0]->album_name}} - Photos</h2>
+                <h2 class="mb-4 text-center" >Photo Details</h2>
 
           </div>
 
@@ -56,39 +56,37 @@
                </div>-->
                {{-- <div class="container my-4" style="margin-bottom:50px;"> --}}
 
-               @if(count($photos)==0)
+               @if(count($photodetails)==0)
 
                 <div class="row items gts justify-content-center align-items-center">
                     <div class="col-lg-12 text-center">
                         <div class="alert alert-primary">
-                            <p>Sorry! There is no photos in this album.
+                            <p>Sorry! There is no details for this photo.
                         </div>
                     </div>
 
                 </div>
                @else
-               <div class="row py-2">
-               @foreach($photos as $photo)
+               <div class="row py-2 justify-content-center">
+               {{-- @foreach($photos as $photo) --}}
 
                {{-- @dd($photos) --}}
 
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center pt-4">
+               <div class="item gts col-lg-6 col-md-8 col-6 col-sm text-center">
 
-                    {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
+                   {{-- <a href="http://restschool.hridham.com/storage/photos/{{ $photodetails[0]->photo }}" class="fancylight" data-fancybox-group="light"> --}}
+                   {{-- <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photodetails[0]->photo) }}" alt="{{ $photodetails[0]->photo }}" height="100px"> --}}
+                   <img class="img-fluid img-responsive" src="http://restschool.hridham.com/storage/photos/{{ $photodetails[0]->photo }}" alt="{{ $photodetails[0]->photo }}" width="100%" height="100%">
+                   {{-- </a> --}}
 
-                   <a href="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" class="fancylight" data-fancybox-group="light">
-                   <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
-                   </a>
-
-                     <p>{{ $photo->photo_description }}</p>
-                     <a href="{{ url('photos/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a>
+                     <p>{{ $photodetails[0]->photo_description }}</p>
 
                 </div>
 
 
 
 
-                @endforeach
+                {{-- @endforeach --}}
 
                 {{-- <img src="{{url('imager/http://restschool.hridham.com/storage/photos/IMG-20200224-WA0016_1586330222.jpg') }}"> --}}
             </div>
@@ -96,9 +94,11 @@
                 @endif
 
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-4">
                 <div class="pagination">
-                    {{ $photos->links() }}
+                    <a href="{{ url()->previous() }}" class="album bg-primary text-white p-2">Back To Albums</a>
+
+                    {{-- {{ $photos->links() }} --}}
                  </div>
 
             </div>

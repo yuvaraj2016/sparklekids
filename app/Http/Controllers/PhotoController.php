@@ -46,6 +46,9 @@ class PhotoController extends Controller
             $data = $this->paginate($photodata->photos);
             $albumdata = $photodata->data;
 
+            // dd($data);
+            // exit;
+
             //  echo Session::get('access_token');
             //  return false;
 
@@ -84,6 +87,68 @@ class PhotoController extends Controller
 
     }
 
+    public function show($id)
+    {
+        try
+        {
+
+        $client = new Client();
+        $response = $client->request('GET', 'http://restschool.hridham.com/api/photos/'.$id,
+        []);
+
+        //  dd($response->getBody());
+        //  return false;
+
+        if($response->getStatusCode() === 200)
+        {
+            //  echo $response->getBody();
+
+            //  exit;
+            $data = json_decode($response->getBody());
+            $photodata = $data->data;
+
+
+            // dd($photodata);
+            // exit;
+
+            //  echo Session::get('access_token');
+            //  return false;
+
+            return view('photodetails',['photodetails'=>$photodata]);
+
+        }
+
+        }
+        catch(BadResponseException $ex)
+        {
+            $data = json_decode($ex->getResponse()->getBody()->getContents(), true);
+            $errors = [];
+
+            // session()->forget('access_token');
+
+            foreach($data as $k=>$v)
+                $errors[$k]=$v;
+            return view('photo')->with('error',"Error! There is an error in photo details loading");
+            //return view('auth.register')->with(['error'=>$errors]);
+        }
+        if($response->getStatusCode() == 201)
+        {
+            $albums = json_decode($response->getBody(),true);
+
+            //  echo Session::get('access_token');
+            //  return false;
+
+            return view('photo',['photos'=>$data]);
+            // return redirect('/gallery')->with('success','Successfully Registered');
+        }
+        else
+        {
+            return 'Internal Server Error!<br>Check api/photos/id<br>'.$response;
+        }
+
+
+    }
+
     public function paginate($items, $perPage = 5, $page = null, $options = [])
     {
         $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
@@ -97,12 +162,18 @@ class PhotoController extends Controller
     {
 
         $imgpath = 'http://restschool.hridham.com/storage/photos/'.$path;
-        Image::make($imgpath)->fit('250','250')
+
             // ->fit('250','250', function ($constraint) {
             //     $constraint->upsize();
             //     $constraint->aspectRatio();
             // })
+            // echo $path;
+            // return file_exists(storage_path()."/app/public/photos/".$path);
+            if(!file_exists(storage_path()."/app/public/photos/".$path))
+            {
+            Image::make($imgpath)->fit('250','250')
             ->save(storage_path()."/app/public/photos/".$path, 80);
+            }
 
         // Return the thumbnail url
         // return Storage::url("photos/".$path);
