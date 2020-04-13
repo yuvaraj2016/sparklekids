@@ -60,6 +60,9 @@ color:black;
 text-shadow: 0 0 3px #FF0000;
 }
 
+
+
+
 /*boostrap card*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -109,7 +112,7 @@ text-shadow: 0 0 3px #FF0000;
           <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-8 text-center ftco-animate">
             <h1 class="mb-4">Play Is The New Learn</h1>
-            <p><a href="#contact_form" class="btn btn-secondary px-4 py-3 mt-3">Admission open</a></p>
+            <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-3" style="color:white;"><b>Admission Open</b></a></p>
             <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
         </div>
         </div>
@@ -177,7 +180,7 @@ text-shadow: 0 0 3px #FF0000;
     <div class="container">
         <div class="row justify-content-center mb-2 pb-2">
   <div class="col-md-8 text-center heading-section ftco-animate">
-    <h2 class="mb-4" style="animation: ripple 15s infinite; padding-bottom:!important; margin-bottom:0px!important;"><span>About</span> Us</h2>
+    <h2 class="mb-4" style="animation: ripple 15s infinite; padding-bottom:!important; margin-bottom:0px!important; color:#1eaaf1">About Us</h2>
 
   </div>
 </div>
@@ -193,6 +196,7 @@ text-shadow: 0 0 3px #FF0000;
                     {{-- <h3><a href="#">Arts Lesson</a></h3>
                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
                     <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
+                    <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.</p>
                 </div>
             </div>
             <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
@@ -205,11 +209,12 @@ text-shadow: 0 0 3px #FF0000;
                     {{-- <h3><a href="#">Language Lesson</a></h3>
                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
                     <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
-
+                    <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
+                    <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
 
                 </div>
             </div>
-            <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+       <!--    <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
             -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
             box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
             padding: 10px;
@@ -233,7 +238,7 @@ text-shadow: 0 0 3px #FF0000;
                     <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
                     <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>
@@ -243,12 +248,12 @@ text-shadow: 0 0 3px #FF0000;
 			<div class="container">
 				<div class="row bg-light p-4">
 
-					<div class="col-md-8 wrap-about ftco-animate" style="margin-top:0px;">
-          	<h2 class="mb-4 bg-secondary text-center" style="border-radius:30px; font-weight:bold; color:#fff;">7 Star Curriculum</h2>
+					<div class="col-md-8 wrap-about ftco-animate" style="margin-top:20px;">
+          	<h2 class="mb-4 bg-info text-center" style="border-radius:30px; font-weight:bold; color:#fff;font-size:20px">7 Star Curriculum</h2>
                         <!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>-->
-                        <p class="text-center bg-white"> Holistic development through 7 star curriculum</p>
+                     <!--   <p class="text-center bg-white" style="margin-block-end: auto;"> Holistic development through 7 star curriculum</p>-->
 						<div class="row p-2 bg-white" style="">
-
+                         <p class="text-center bg-white offset-2">   Holistic development through 7 star curriculum</p>
 							<div class="col-lg-6" style="padding-top:30px;">
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Connecting_with_nature_3.png" width="35px"></div>
@@ -319,16 +324,16 @@ text-shadow: 0 0 3px #FF0000;
 
 
 						<div class="text ftco-animate ">
-                  <h3 class="mb-2 bg-secondary text-center" style="color:white; border-radius:30px; font-weight:bold;">Sparkle Advantages</h3>
+                  <h3 class="mb-2 bg-info text-center" style="color:white; border-radius:30px; font-weight:bold;font-size:20px">Sparkle Advantages</h3>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fas fa-book text-primary mx-2" style="font-size:30px;vertical-align:middle; margin-right:40px;"></i><span style="margin-left:20px;">7 Star Curriculum</span></li>
-                    <li class="list-group-item"><i class="fas fa-chalkboard-teacher text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:12px;">Well Trained Teachers</span></li>
-                    <li class="list-group-item"><i class="fas fa-pray text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:23px;"> Story Yoga</span></li>
-                    <li class="list-group-item"><i class="fas fa-users text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:16px;">Parent App</span></li>
-                    <li class="list-group-item"><i class="fas fa-swimmer text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:17px;">Splashpool & Sandplay</span></li>
-                    <li class="list-group-item"><i class="fas fa-box text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:20px;">Smart Box</span></li>
-                    <li class="list-group-item"><i class="fas fa-tasks text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:25px;">Daily Worksheet</span></li>
-                    <li class="list-group-item"><i class="fas fa-school text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:16px;">Montessori</span></li>
+                    <li class="list-group-item"><i class="fas fa-book text-primary mx-2" style="font-size:30px;vertical-align:middle; margin-right:40px;"></i><span style="margin-left:20px;font-size:15px;">7 Star Curriculum</span></li>
+                    <li class="list-group-item"><i class="fas fa-chalkboard-teacher text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:12px;font-size:15px;">Well Trained Teachers</span></li>
+                    <li class="list-group-item"><i class="fas fa-pray text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:23px;font-size:15px;"> Story Yoga</span></li>
+                    <li class="list-group-item"><i class="fas fa-users text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:16px;font-size:15px;">Parent App</span></li>
+                    <li class="list-group-item"><i class="fas fa-swimmer text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:17px;font-size:15px;">Splashpool & Sandplay</span></li>
+                    <li class="list-group-item"><i class="fas fa-box text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:20px;font-size:15px;">Smart Box</span></li>
+                    <li class="list-group-item"><i class="fas fa-tasks text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:25px;font-size:15px;">Daily Worksheet</span></li>
+                    <li class="list-group-item"><i class="fas fa-school text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:16px;font-size:15px;">Montessori</span></li>
                   </ul>
 		<!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
 							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
@@ -636,7 +641,7 @@ text-shadow: 0 0 3px #FF0000;
     <div id="contact_form"></div>
     <div  style="padding-top:40px"></div>
     <div class="text-center heading-section ftco-animate"  >
-        <h2 class="mb-4" >Contact Form</h2>
+        <h2 class="mb-4 text-center text-primary">Contact Form</h2>
 
       </div>
 
@@ -855,7 +860,7 @@ text-shadow: 0 0 3px #FF0000;
         <br><br>
 <section>
     <div class=" heading-section ftco-animate">
-        <h2 class="mb-4 text-center" >Gallery</h2>
+        <h2 class="mb-4 text-center  text-primary">Gallery</h2>
 
       </div>
     <div class="container">
@@ -1129,7 +1134,7 @@ text-shadow: 0 0 3px #FF0000;
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
       <div class="col-md-8 text-center heading-section ftco-animate">
-        <h2 class="mb-4"><span>Recent</span> Testimonials</h2>
+        <h2 class="mb-4" style="color:#1eaaf1;"<span>Recent</span> Testimonials</h2>
         <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
       </div>
     </div>
@@ -1147,10 +1152,11 @@ text-shadow: 0 0 3px #FF0000;
             <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div class="d-flex align-items-center mt-4">
-            <p class="mb-0"><a href="{{ url('test_children')}}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-            <p class="mb-0 offset-2"><a href="{{ url('testimonial')}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-            </div>
+
+            <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+            <p class="mb-0 offset-2"><a href="{{ url('test_children')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
+        </div>
           </div>
         </div>
       </div>
@@ -1167,9 +1173,10 @@ text-shadow: 0 0 3px #FF0000;
             <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div class="d-flex align-items-center mt-4">
-            <p class="mb-0"><a href="{{('test_teacher')}}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-                <p class="mb-0 offset-2"><a href="{{ url('testimonial')}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                <p class="mb-0 offset-2"><a href="{{('test_teacher')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
           </div>
         </div>
@@ -1187,9 +1194,10 @@ text-shadow: 0 0 3px #FF0000;
             <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div class="d-flex align-items-center mt-4">
-            <p class="mb-0"><a href="{{ url('test_sports')}}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-                <p class="mb-0 offset-2"><a href="{{ url('testimonial')}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                <p class="mb-0  offset-2"><a href="{{ url('test_sports')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
           </div>
         </div>
