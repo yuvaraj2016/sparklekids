@@ -121,20 +121,27 @@
                   </a>
                </div>-->
 
+               {{-- /*resize image using css code* --}}
+
+               {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
                @foreach($albums as $album)
                {{-- @dd($albums) --}}
+               {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
             <a href="{{ url('albums/'.$album->id) }}" class="album">
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item gts col-lg-3 col-md-3 col-6 col-sm" style="border:3px solid #1EAAF1; padding:0px; margin-top:15px;">
 
-                    <div style="text-align:center" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
-                    <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light">
-                    <img class="img-fluid" src="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" alt="">
+                    <div style="text-align:center;" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
+                    <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light" style="margin-left:25px;">
+                    <img class="img-fluid" src="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" alt="">
                     </a>
                     {{-- <address> --}}
+                  {{-- @if(!is_null($album->album_description)) --}}
+
                         <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
 
                     {{-- </address> --}}
                     </div>
+                {{-- @endif --}}
                 </a>
                 @endforeach
                 {{-- <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
