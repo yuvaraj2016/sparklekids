@@ -193,6 +193,7 @@ text-shadow: 0 0 3px #FF0000;
             background: white; border-right:3px solid rgba(0, 0, 0, .1);">
                 <div class="img" style="background-image: url(images/course-1.jpg);"></div>
                 <div class="text bg-light p-4">
+
                     {{-- <h3><a href="#">Arts Lesson</a></h3>
                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
                     <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
@@ -210,7 +211,7 @@ text-shadow: 0 0 3px #FF0000;
                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
                     <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
                     <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
-                    <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
+                  <!--  <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>-->
 
                 </div>
             </div>
@@ -239,9 +240,43 @@ text-shadow: 0 0 3px #FF0000;
                     <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
                 </div>
             </div>-->
+            <!--<div class="col-sm-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+             -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            padding: 10px;
+            background: white; border-right:3px solid rgba(0, 0, 0, .1);">
+                <div class="img" style="background-image: url(images/course-1.jpg);"></div>
+                <div class="text bg-light p-4">
+                    {{-- <h3><a href="#">Arts Lesson</a></h3>
+                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
+                    <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
+                    <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.</p>
+                </div>
+        </div>
+            <div class="col-sm-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+           box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+           padding: 10px;
+           background: white; border-right:3px solid rgba(0, 0, 0, .1);">
+                 <div class="img" style="background-image: url(images/course-2.jpg); border:0px solid orange; box-shadow:"></div>
+                 <div class="text bg-light p-4">
+                     {{-- <h3><a href="#">Language Lesson</a></h3>
+                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
+                     <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
+                     <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
+                     <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
+
+                 </div>
+
+        </div>-->
+
+
+
+
         </div>
     </div>
 </section>
+
 
 
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
