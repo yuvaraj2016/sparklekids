@@ -37,8 +37,7 @@ Route::get('/test_children', function () {
 Route::get('/test_teacher', function () {
     return view('test_teacher');
 });
-
-Route::get('/test_sportsr', function () {
+Route::get('/test_sports', function () {
     return view('test_sports');
 });
 
