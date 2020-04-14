@@ -45,7 +45,7 @@ img .img {
 
 background-color:#1eaaf1;
 border-radius: 73px;
-color:red;
+
 
 }
 .ss a:hover{
@@ -67,7 +67,7 @@ color:red;
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light " id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/sparklelogo.jpg" class="img" width="350px"></a>
+        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/sparklelogo.jpg" class="img" width="250px"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -87,8 +87,8 @@ color:red;
                         <li style="text-align:center"><a href="{{ url('/contact_form')}}" style="color:black;">Contact form to send email</a></li>
                       </ul>
                 </li>-->
-                <li class="nav-item active" style="border-radius:1px solid"><a href="#" class="nav-link "><span class="icon-home"></span> Home</a></li>
-	        	<li class="nav-item"><a href="{{ url('/testimonial')}}" class="nav-link"><span class="icon-users"></span> Testimonial</a></li>
+                <li class="nav-item active" style="border-radius:1px solid;margin-right:4px;"><a href="#" class="nav-link "><span class="icon-home"></span> Home</a></li>
+	        	<li class="nav-item" style="margin-right:3px;"><a href="{{ url('/testimonial')}}" class="nav-link"><span class="icon-users"></span> Testimonial</a></li>
                 <li class="nav-item"><a href="{{ url('/gallery')}}" class="nav-link"> <span class="icon-photo"></span> Gallery</a></li>
 
 	       <!-- 	<li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
