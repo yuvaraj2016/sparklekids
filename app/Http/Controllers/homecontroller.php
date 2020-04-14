@@ -40,11 +40,11 @@ class homecontroller extends Controller
 
             $albumdata = json_decode($response->getBody());
             $data = $this->paginate($albumdata->message);
-
+// dd($data);exit;
             //  echo Session::get('access_token');
             //  return false;
 
-            return view('/',['albums'=>$data]);
+            return view('index',['albums'=>$data]);
 
         }
 
@@ -68,7 +68,7 @@ class homecontroller extends Controller
             //  echo Session::get('access_token');
             //  return false;
 
-            return view('/')->with('albums',compact('albums'));
+            return view('index')->with('albums',compact('albums'));
             // return redirect('/gallery')->with('success','Successfully Registered');
         }
         else
@@ -88,7 +88,7 @@ public function paginate($items, $perPage = 5, $page = null, $options = [])
     $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
     $items = $items instanceof Collection ? $items : Collection::make($items);
     $paginatedItems =new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
-    $paginatedItems->setPath(url('/gallery'));
+    $paginatedItems->setPath(url('/'));
     return $paginatedItems;
 }
 
