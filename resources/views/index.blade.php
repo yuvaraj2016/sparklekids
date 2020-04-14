@@ -175,7 +175,7 @@ text-shadow: 0 0 3px #FF0000;
 			</div>
 		</section>
 <br>
-<section class="ftco-section">
+<!--<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-2 pb-2">
   <div class="col-md-8 text-center heading-section ftco-animate">
@@ -191,11 +191,11 @@ text-shadow: 0 0 3px #FF0000;
             padding: 10px;
             background: white; border-right:3px solid rgba(0, 0, 0, .1);">
                 <div class="img" style="background-image: url(images/course-1.jpg);"></div>
-                <div class="text bg-light p-4">
+                <div class="text bg-light p-4">-->
 
                     {{-- <h3><a href="#">Arts Lesson</a></h3>
                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
+                  <!--  <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
                     <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.</p>
                 </div>
             </div>
@@ -205,15 +205,15 @@ text-shadow: 0 0 3px #FF0000;
             padding: 10px;
             background: white;">
                 <div class="img" style="background-image: url(images/course-2.jpg); border:0px solid orange; box-shadow:"></div>
-                <div class="text bg-light p-4">
+                <div class="text bg-light p-4">-->
                     {{-- <h3><a href="#">Language Lesson</a></h3>
                     <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
-                    <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
+                   <!-- <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
+                    <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>-->
                   <!--  <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>-->
 
-                </div>
-            </div>
+              <!--  </div>
+            </div>-->
        <!--    <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
             -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
             box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -272,12 +272,62 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
+     <!--   </div>
+    </div>
+</section>--->
+<!--about us-->
+<section class="ftco-section ftco-no-pt ftc-no-pb">
+
+    <div class="container">
+        <div class="row justify-content-center mb-2 pb-2">
+            <div class="col-md-8 text-center heading-section ftco-animate">
+              <h2 class="mb-4" style="animation: ripple 15s infinite; padding-bottom:!important; margin-bottom:0px!important; color:#1eaaf1">About Us</h2>
+
+            </div>
+          </div>
+
+        <div class="row bg-light p-3">
+
+            <div class="col-md-6" style="border:0px solid #1EAAF1; padding:0px;">
+                <div class="card py-0"  style="width:100%;">
+
+                    <div class="card-body bg-white py-0">
+                        <div class="img" style="background-image: url(images/course-1.jpg);"></div>
+                        <img src="images/course-2.jpg"  width="350px"  align="middle">
+                        <div class="row p-2" style="">
+                            <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
+                            <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.</p>
+
+
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6" style="border:0px solid #1EAAF1; padding:0px;">
+            <div class="card py-0"  style="width:100%;">
+
+                <div class="card-body bg-white py-0">
+
+                    <img src="images/course-3.jpg" width="350px"  align="middle">
+                    <div class="row p-2" style="">
+                        <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
+                        <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
+                      <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
+
+
+              </div>
+            </div>
         </div>
     </div>
+
+                </div>
+    </div>
+</div>
+
 </section>
 
-
-
+<!--end-->
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 
 			<div class="container">
@@ -356,11 +406,6 @@ text-shadow: 0 0 3px #FF0000;
                                            </div>
                                        </div>
 
-
-                              {{-- <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#!" class="btn btn-primary">Go somewhere</a> --}}
-
                           </div>
                         </div>
                     </div>
@@ -383,55 +428,15 @@ text-shadow: 0 0 3px #FF0000;
                                     <li class="list-group-item"><i class="fas fa-tasks text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:25px;font-size:15px;">Daily Worksheet</span></li>
                                     <li class="list-group-item"><i class="fas fa-school text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:16px;font-size:15px;">Montessori</span></li>
                                   </ul>
-                                  {{-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                  <a href="#!" class="btn btn-primary">Go somewhere</a> --}}
+
                                 </div>
                               </div>
                             </div>
-          	{{-- <h2 class="mb-4 bg-info text-center" style="border-radius:30px; font-weight:bold; color:#fff;font-size:20px">7 Star Curriculum</h2> --}}
-                        <!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>-->
-                     <!--   <p class="text-center bg-white" style="margin-block-end: auto;"> Holistic development through 7 star curriculum</p>-->
-
-
-
-
 
                         </div>
             </div>
         </div>
-    {{-- <div class="container">
-        <div class="row">
-            <div class="col-lg-9 py-0">
-                <div class="card py-0" style="width:100%;">
-                    <div class="card-header">
-                      Featured
-                    </div>
-                    <div class="card-body py-0">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#!" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
 
-            </div>
-
-            <div class="col-lg-3">
-                <div class="card" style="width:100%;">
-                    <div class="card-header">
-                      Featured
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#!" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-
-            </div>
-
-        </div>
-
-    </div> --}}
 		</section>
 
 	<!--	<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
@@ -1179,10 +1184,11 @@ text-shadow: 0 0 3px #FF0000;
      </div>
 
 </section>-->
+
 <!--gallery-->
 <section>
     <div class=" heading-section ftco-animate">
-        <h2 class="mb-4 text-center ptitle" >Gallery</h2>
+        <h2 class="mb-4 text-center ptitle text-primary" >Gallery</h2>
 
       </div>
     <div class="container">
@@ -1228,57 +1234,7 @@ text-shadow: 0 0 3px #FF0000;
 </section>
 <br>
 
-<section class="ftco-section ftco-no-pb">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-2">
-  <div class="col-md-8 text-center heading-section ftco-animate">
-    <h2 class="mb-4">Latest Posts</h2>
-    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-  </div>
-</div>
-        <div class="row">
 
-            @foreach($testimonials as $testimonial)
-            {{-- @dd($albums) --}}
-
-            <div class="col-md-6 col-lg-4 ftco-animate">
-                <div class="blog-entry">
-                  <a href="{{ url('testimonial/'.$testimonial->id)}}" class="block-20 d-flex align-items-end" style="background-image: url('http://restschool.hridham.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
-                                    <div class="meta-date text-center p-2">
-                                    <?php
-                                          $date= explode('-',$testimonial->testimonial_date);
-                                         ?>
-                      <span class="day">{{ $date[0] }}</span>
-                      <span class="mos">{{ date("F", mktime(0, 0, 0, $date[1], 1))}}</span>
-                      <span class="yr">{{ $date[2] }}</span>
-                    </div>
-                  </a>
-                  <div class="text bg-white p-4">
-                    <h3 class="heading">{{ $testimonial->testimonial_title }}</h3>
-                    <p>{{ str_limit(strip_tags($testimonial->testimonial_desc), 120) }}</p>
-                    @if (strlen($testimonial->testimonial_desc)>120)
-                    <div class="d-flex align-items-center mt-4">
-                        <p class="mb-0 offset-2"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                    </div>
-                    @endif
-
-                  </div>
-                </div>
-              </div>
-             @endforeach
-
-
-
-            </div>
-            <div class="row justify-content-center">
-                <div class="pagination">
-                    {{ $testimonials->links() }}
-                 </div>
-
-            </div>
-        </div>
-
-</section>
 
 
 	<!--	<section class="ftco-gallery">
