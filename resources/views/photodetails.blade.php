@@ -96,7 +96,7 @@
 
             <div class="row justify-content-center pb-4">
                 <div class="pagination">
-                    <a href="{{ url()->previous() }}" class="album bg-primary text-white p-2">Back To Albums</a>
+                    <a href="{{ url()->previous() }}" class="album bg-primary text-white p-2">Back</a>
 
                     {{-- {{ $photos->links() }} --}}
                  </div>
