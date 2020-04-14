@@ -51,7 +51,6 @@ a:hover .pad {
     position: absolute;
    bottom: 80px;
    left: 0;
-
    margin-left: 110px;
     -webkit-text-stroke-width: 2px;
 background-color:gray;
@@ -280,104 +279,159 @@ text-shadow: 0 0 3px #FF0000;
 
 
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
-			<div class="container">
-				<div class="row bg-light p-4">
 
-					<div class="col-md-8 wrap-about ftco-animate" style="margin-top:20px;">
-          	<h2 class="mb-4 bg-info text-center" style="border-radius:30px; font-weight:bold; color:#fff;font-size:20px">7 Star Curriculum</h2>
+			<div class="container">
+				<div class="row bg-light p-3">
+
+                    <div class="col-md-8" style="border:0px solid #1EAAF1; padding:0px;">
+                        <div class="card py-0"  style="width:100%;">
+                            <div class="card-header bg-primary p-2 text-center" style="color:white;font-weight:bold;font-size:20px">
+                                7 Star Curriculum
+                            </div>
+                            <div class="card-body bg-white py-0">
+
+                                <div class="row p-2" style="">
+                                    <p class="text-center bg-white offset-2">Holistic development through 7 star curriculum</p>
+                                       <div class="col-lg-6" style="padding-top:30px;">
+                                           <div class="services-2 d-flex">
+                                               <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Connecting_with_nature_3.png" width="35px"></div>
+                                               <div class="text">
+                                                   <h4>Connecting With Nature</h4>
+                                               <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6"  style="padding-top:30px;">
+                                           <div class="services-2 d-flex">
+                                               <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
+                                               <div class="text">
+                                                   <h4>Foster Individual Potential</h4>
+                                               <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                           <div class="services-2 d-flex">
+                                               <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
+                                               <div class="text">
+                                                   <h4>Social &amp; Emotional Development </h4>
+                                                   <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                           <div class="services-2 d-flex">
+                                               <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Awareness.png" width="35px"></div>
+                                               <div class="text">
+                                                   <h4>Personal Awarness</h4>
+                                                   <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                           <div class="services-2 d-flex">
+                                               <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
+                                               <div class="text">
+                                                   <h4>Cognitive Development</h4>
+                                                   <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                           <div class="services-2 d-flex">
+                                               <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Language.png" width="35px"></div>
+                                               <div class="text">
+                                                   <h4>Speech &amp; Language Development</h4>
+                                                   <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-lg-6 my-0 pt-1">
+                                           <div class="services-2 d-flex py-0">
+                                               <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
+                                               <div class="text"  style="padding-bottom:0px;">
+                                                   <h4>Gross &amp; Fine Motor Development</h4>
+                                                   <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                               </div>
+                                           </div>
+                                       </div>
+
+
+                              {{-- <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#!" class="btn btn-primary">Go somewhere</a> --}}
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                          <div class="col-md-4" style="border:0px solid #1EAAF1; padding:0px;">
+                            <div class="card" style="width:100%;">
+                                <div class="card-header bg-primary text-center p-2" style="color:white;font-weight:bold;font-size:20px">
+                                    Sparkle Advantages
+                                </div>
+                                <div class="card-body bg-white">
+
+                                  <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fas fa-book text-primary mx-1" style="font-size:25px;vertical-align:middle; margin-right:20px;"></i><span style="margin-left:25px;font-size:15px;">7 Star Curriculum</span></li>
+                                    <li class="list-group-item"><i class="fas fa-chalkboard-teacher text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:12px;font-size:15px;">Well Trained Teachers</span></li>
+                                    <li class="list-group-item"><i class="fas fa-pray text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:23px;font-size:15px;"> Story Yoga</span></li>
+                                    <li class="list-group-item"><i class="fas fa-users text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:16px;font-size:15px;">Parent App</span></li>
+                                    <li class="list-group-item"><i class="fas fa-swimmer text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:17px;font-size:15px;">Splashpool & Sandplay</span></li>
+                                    <li class="list-group-item"><i class="fas fa-box text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:20px;font-size:15px;">Smart Box</span></li>
+                                    <li class="list-group-item"><i class="fas fa-tasks text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:25px;font-size:15px;">Daily Worksheet</span></li>
+                                    <li class="list-group-item"><i class="fas fa-school text-primary mx-1" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:16px;font-size:15px;">Montessori</span></li>
+                                  </ul>
+                                  {{-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                  <a href="#!" class="btn btn-primary">Go somewhere</a> --}}
+                                </div>
+                              </div>
+                            </div>
+          	{{-- <h2 class="mb-4 bg-info text-center" style="border-radius:30px; font-weight:bold; color:#fff;font-size:20px">7 Star Curriculum</h2> --}}
                         <!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>-->
                      <!--   <p class="text-center bg-white" style="margin-block-end: auto;"> Holistic development through 7 star curriculum</p>-->
-						<div class="row p-2 bg-white" style="">
-                         <p class="text-center bg-white offset-2">   Holistic development through 7 star curriculum</p>
-							<div class="col-lg-6" style="padding-top:30px;">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Connecting_with_nature_3.png" width="35px"></div>
-									<div class="text">
-										<h4>Connecting With Nature</h4>
-									<!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6"  style="padding-top:30px;">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
-									<div class="text">
-										<h4>Foster Individual Potential</h4>
-									<!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
-									<div class="text">
-										<h4>Social &amp; Emotional Development </h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Awareness.png" width="35px"></div>
-									<div class="text">
-										<h4>Personal Awarness</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
-									<div class="text">
-										<h4>Cognitive Development</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Language.png" width="35px"></div>
-									<div class="text">
-										<h4>Speech &amp; Language Development</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-                            </div>
-                            <div class="col-lg-6 pb-0">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
-									<div class="text">
-										<h4>Gross &amp; Fine Motor Development</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-                            </div>
 
-						</div>
+
+
+
+
+                        </div>
+            </div>
+        </div>
+    {{-- <div class="container">
+        <div class="row">
+            <div class="col-lg-9 py-0">
+                <div class="card py-0" style="width:100%;">
+                    <div class="card-header">
+                      Featured
                     </div>
-                    <div class="col-md-4 order-md-last wrap-about wrap-about bg-primary content1">
+                    <div class="card-body py-0">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#!" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
 
-
-						<div class="text ftco-animate ">
-                  <h3 class="mb-2 bg-info text-center" style="color:white; border-radius:30px; font-weight:bold;font-size:20px">Sparkle Advantages</h3>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fas fa-book text-primary mx-2" style="font-size:30px;vertical-align:middle; margin-right:40px;"></i><span style="margin-left:20px;font-size:15px;">7 Star Curriculum</span></li>
-                    <li class="list-group-item"><i class="fas fa-chalkboard-teacher text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:12px;font-size:15px;">Well Trained Teachers</span></li>
-                    <li class="list-group-item"><i class="fas fa-pray text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:23px;font-size:15px;"> Story Yoga</span></li>
-                    <li class="list-group-item"><i class="fas fa-users text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:16px;font-size:15px;">Parent App</span></li>
-                    <li class="list-group-item"><i class="fas fa-swimmer text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:17px;font-size:15px;">Splashpool & Sandplay</span></li>
-                    <li class="list-group-item"><i class="fas fa-box text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:20px;font-size:15px;">Smart Box</span></li>
-                    <li class="list-group-item"><i class="fas fa-tasks text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:25px;font-size:15px;">Daily Worksheet</span></li>
-                    <li class="list-group-item"><i class="fas fa-school text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:16px;font-size:15px;">Montessori</span></li>
-                  </ul>
-		<!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
-							<p><a href="#" class="btn btn-secondary px-4 py-3">Read More</a></p>-->
-						</div>
-					</div>
-				</div>
             </div>
 
+            <div class="col-lg-3">
+                <div class="card" style="width:100%;">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#!" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+
+    </div> --}}
 		</section>
 
 	<!--	<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
