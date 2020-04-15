@@ -88,6 +88,31 @@ text-shadow: 0 0 3px #FF0000;
   }
 }
 
+
+@media only screen and (max-width: 600px) {
+
+
+    .sa
+    {
+        margin-top:30px!important;
+        margin-left: 8px!important;
+
+    }
+
+    .mtitle
+    {
+        margin-left:-5px!important;
+
+    }
+
+    .text h4{
+
+        margin-top:-2px!important;
+    }
+
+
+}
+
 </style>
 
     <section class="home-slider owl-carousel">
@@ -176,7 +201,7 @@ text-shadow: 0 0 3px #FF0000;
 		</section>
 <br>
 <section class="ftco-section">
-    <div class="container">
+
         <div class="row justify-content-center mb-2 pb-2">
   <div class="col-md-8 text-center heading-section ftco-animate">
     <h2 class="mb-4" style="animation: ripple 15s infinite; padding-bottom:!important; margin-bottom:0px!important; color:#1eaaf1">About Us</h2>
@@ -184,36 +209,73 @@ text-shadow: 0 0 3px #FF0000;
   </div>
 </div>
 
-        <div class="row" style="" class="p-4" id="c">
-            <div class="col-md-6 course d-lg-flex ftco-animate " style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            padding: 10px;
-            background: white; border-right:3px solid rgba(0, 0, 0, .1);">
-                <div class="img" style="background-image: url(images/course-1.jpg);"></div>
-                <div class="text bg-light p-4">
 
-                    {{-- <h3><a href="#">Arts Lesson</a></h3>
-                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
-                    <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.</p>
-                </div>
-            </div>
-            <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            padding: 10px;
-            background: white;">
-                <div class="img" style="background-image: url(images/course-2.jpg); border:0px solid orange; box-shadow:"></div>
-                <div class="text bg-light p-4">
-                    {{-- <h3><a href="#">Language Lesson</a></h3>
-                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
-                    <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
-                  <!--  <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>-->
 
+                <div class="aboutus-section py-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="aboutus">
+                                    {{-- <h2 class="aboutus-title">About Us</h2> --}}
+                                    <p class="aboutus-text">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
+                                    <p class="aboutus-text">A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.
+
+                                    </p>
+                                    {{-- <a class="aboutus-more" href="#">read more</a> --}}
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="aboutus-banner">
+                                    <img src="{{ url('images/board.jpg') }}" alt="" class="img-fluid img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-12">
+                                <div class="feature">
+                                    <div class="feature-box">
+                                        <div class="clearfix">
+                                            <div class="iconset">
+                                                <span class="glyphicon glyphicon-cog icon"></span>
+                                            </div>
+                                            <div class="feature-content">
+                                                {{-- <h4>Work with heart</h4> --}}
+                                                <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-box">
+                                        <div class="clearfix">
+                                            <div class="iconset">
+                                                <span class="glyphicon glyphicon-cog icon"></span>
+                                            </div>
+                                            <div class="feature-content">
+                                                {{-- <h4>Reliable services</h4> --}}
+                                                <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-box">
+                                        <div class="clearfix">
+                                            <div class="iconset">
+                                                <span class="glyphicon glyphicon-cog icon"></span>
+                                            </div>
+                                            <div class="feature-content">
+                                                {{-- <h4>Great support</h4> --}}
+                                                <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+
+
        <!--    <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
             -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
             box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -278,10 +340,14 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
+
+
+
+
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 
 			<div class="container">
-				<div class="row bg-light p-3">
+				<div class="row bg-white p-3">
 
                     <div class="col-md-8" style="border:0px solid #1EAAF1; padding:0px;">
                         <div class="card py-0"  style="width:100%;">
@@ -291,12 +357,12 @@ text-shadow: 0 0 3px #FF0000;
                             <div class="card-body bg-white py-0">
 
                                 <div class="row p-2" style="">
-                                    <p class="text-center bg-white offset-2">Holistic development through 7 star curriculum</p>
+                                    <p class="text-center bg-white offset-2 mtitle">Holistic development through 7 star curriculum</p>
                                        <div class="col-lg-6" style="padding-top:30px;">
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Connecting_with_nature_3.png" width="35px"></div>
                                                <div class="text">
-                                                   <h4>Connecting With Nature</h4>
+                                                   <h4>Connecting With <br>Nature</h4>
                                                <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -305,7 +371,7 @@ text-shadow: 0 0 3px #FF0000;
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
                                                <div class="text">
-                                                   <h4>Foster Individual Potential</h4>
+                                                   <h4>Foster Individual <br>Potential</h4>
                                                <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -314,7 +380,7 @@ text-shadow: 0 0 3px #FF0000;
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
                                                <div class="text">
-                                                   <h4>Social &amp; Emotional Development </h4>
+                                                   <h4>Social &amp; Emotional <br>Development </h4>
                                                    <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -323,7 +389,7 @@ text-shadow: 0 0 3px #FF0000;
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Awareness.png" width="35px"></div>
                                                <div class="text">
-                                                   <h4>Personal Awarness</h4>
+                                                   <h4>Personal <br>Awareness</h4>
                                                    <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -332,7 +398,7 @@ text-shadow: 0 0 3px #FF0000;
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
                                                <div class="text">
-                                                   <h4>Cognitive Development</h4>
+                                                   <h4>Cognitive <br>Development</h4>
                                                    <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -341,7 +407,7 @@ text-shadow: 0 0 3px #FF0000;
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Language.png" width="35px"></div>
                                                <div class="text">
-                                                   <h4>Speech &amp; Language Development</h4>
+                                                   <h4>Speech &amp; Language<br> Development</h4>
                                                    <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -350,7 +416,7 @@ text-shadow: 0 0 3px #FF0000;
                                            <div class="services-2 d-flex py-0">
                                                <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
                                                <div class="text"  style="padding-bottom:0px;">
-                                                   <h4>Gross &amp; Fine Motor Development</h4>
+                                                   <h4>Gross &amp; Fine <br>Motor Development</h4>
                                                    <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                                </div>
                                            </div>
@@ -366,7 +432,7 @@ text-shadow: 0 0 3px #FF0000;
                     </div>
                 </div>
 
-                          <div class="col-md-4" style="border:0px solid #1EAAF1; padding:0px;">
+                          <div class="col-md-3 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:30px;">
                             <div class="card" style="width:100%;">
                                 <div class="card-header bg-primary text-center p-2" style="color:white;font-weight:bold;font-size:20px">
                                     Sparkle Advantages
