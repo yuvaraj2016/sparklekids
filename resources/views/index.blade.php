@@ -214,7 +214,7 @@ text-shadow: 0 0 3px #FF0000;
                 <div class="aboutus-section py-0">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-md-5 col-sm-6 col-xs-12 alert-success">
                                 <div class="aboutus">
                                     {{-- <h2 class="aboutus-title">About Us</h2> --}}
                                     <p class="aboutus-text">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
@@ -224,12 +224,12 @@ text-shadow: 0 0 3px #FF0000;
                                     {{-- <a class="aboutus-more" href="#">read more</a> --}}
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="col-md-2 col-sm-6 col-xs-12">
                                 <div class="aboutus-banner">
-                                    <img src="{{ url('images/board.jpg') }}" alt="" class="img-fluid img-responsive">
+                                    <img src="{{ url('images/SK_Logo.PNG') }}" alt="" class="img-fluid img-responsive">
                                 </div>
                             </div>
-                            <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="feature">
                                     <div class="feature-box">
                                         <div class="clearfix">
@@ -255,21 +255,27 @@ text-shadow: 0 0 3px #FF0000;
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="feature-box">
-                                        <div class="clearfix">
-                                            <div class="iconset">
-                                                <span class="glyphicon glyphicon-cog icon"></span>
-                                            </div>
-                                            <div class="feature-content">
-                                                {{-- <h4>Great support</h4> --}}
-                                                <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.
 
-                                                </p>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-11">
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        {{-- <h4>Great support</h4> --}}
+                                        <p class="alert alert-success">* Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.
+
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -349,7 +355,7 @@ text-shadow: 0 0 3px #FF0000;
 			<div class="container">
 				<div class="row bg-white p-3">
 
-                    <div class="col-md-8" style="border:0px solid #1EAAF1; padding:0px;">
+                    <div class="col-md-7" style="border:0px solid #1EAAF1; padding:0px;">
                         <div class="card py-0"  style="width:100%;">
                             <div class="card-header bg-primary p-2 text-center" style="color:white;font-weight:bold;font-size:20px">
                                 7 Star Curriculum
@@ -432,7 +438,7 @@ text-shadow: 0 0 3px #FF0000;
                     </div>
                 </div>
 
-                          <div class="col-md-3 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:30px;">
+                          <div class="col-md-4 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:30px;">
                             <div class="card" style="width:100%;">
                                 <div class="card-header bg-primary text-center p-2" style="color:white;font-weight:bold;font-size:20px">
                                     Sparkle Advantages
