@@ -79,7 +79,7 @@
 
     <section>
         <div class=" heading-section ftco-animate">
-            <h2 class="mb-4 text-center ptitle" >Gallery</h2>
+            <h2 class="mb-4 text-center ptitle text-primary" >Gallery</h2>
 
           </div>
         <div class="container">

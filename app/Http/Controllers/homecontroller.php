@@ -31,7 +31,7 @@ class homecontroller extends Controller
         $response = $client->request('GET', 'http://restschool.hridham.com/api/getAllAlbums',
         []);
 
-        //  dd($response);
+        // dd($response);
         //  return false;
 
         if($response->getStatusCode() === 200)
@@ -40,7 +40,7 @@ class homecontroller extends Controller
 
             $albumdata = json_decode($response->getBody());
             $data = $this->paginate($albumdata->message);
-// dd($data);exit;
+ //dd($data);exit;
             //  echo Session::get('access_token');
             //  return false;
 
@@ -68,13 +68,15 @@ class homecontroller extends Controller
             //  echo Session::get('access_token');
             //  return false;
 
-            return view('index')->with('albums',compact('albums'));
-            // return redirect('/gallery')->with('success','Successfully Registered');
+            // return view('index')->with('albums',compact('albums'));
+             return redirect('/gallery')->with('success','Successfully Registered');
         }
         else
         {
             return 'Internal Server Error!<br>Check api/users/create<br>'.$response;
         }
+
+
 
         // $albums = Album::all();
         // return view('album',compact('albums'));
@@ -82,15 +84,6 @@ class homecontroller extends Controller
     }
 
 
-
-public function paginate($items, $perPage = 5, $page = null, $options = [])
-{
-    $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
-    $items = $items instanceof Collection ? $items : Collection::make($items);
-    $paginatedItems =new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
-    $paginatedItems->setPath(url('/'));
-    return $paginatedItems;
-}
 
     public function imageresize($path)
     {
@@ -108,5 +101,86 @@ public function paginate($items, $perPage = 5, $page = null, $options = [])
 
 
     }
-    //
+    public function show($id)
+    {
+        $client = new Client();
+        $testresponse = $client->request(
+            'GET',
+            'http://restschool.hridham.com/api/review/' . $id,
+            []
+        );
+
+        if ($testresponse->getStatusCode() === 200) {
+            //  echo $response->getBody();
+
+            $testimonial_data = json_decode($testresponse->getBody());
+            $data = $testimonial_data->data;
+
+            //  echo Session::get('access_token');
+            //  return false;
+            // return view('testimonial');
+            return view('index', ['testimonials' => $data]);
+        }
+    }
+
+    public function testimonial()
+    {
+        try {
+
+            $client = new Client();
+            $testresponse = $client->request(
+                'GET',
+                'http://restschool.hridham.com/api/getAllReview',
+                []
+            );
+
+
+            //  return false;
+
+            if ($testresponse->getStatusCode() === 200) {
+                //  echo $response->getBody();
+
+                $testimonial_data = json_decode($testresponse->getBody());
+                $datatest = $this->paginate($testimonial_data->data);
+
+                //  echo Session::get('access_token');
+                //  return false;
+                // return view('testimonial');
+                // return view('index', ['testimonials' => $datatest]);
+                return $datatest;
+            }
+        } catch (BadResponseException $ex) {
+            return dd($ex->getMessage());
+            $data = json_decode($ex->getResponse()->getBody()->getContents(), true);
+            $errors = [];
+            foreach ($data as $k => $v)
+                $errors[$k] = $v;
+            return redirect('index')->with('error', "Error! There is an error in album images loading");
+            //return view('auth.register')->with(['error'=>$errors]);
+        }
+        if ($testresponse->getStatusCode() == 201) {
+            $albums = json_decode($testresponse->getBody(), true);
+            //  return view('gallery')->with('albums',compact('albums'));
+
+        } else {
+            return 'Internal Server Error!<br>Check api/users/create<br>' . $testresponse;
+        }
+
+
+    }
+
+
+    public function paginate($items, $perPage = 5, $page = null, $options = [])
+{
+    $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+    $items = $items instanceof Collection ? $items : Collection::make($items);
+    $paginatedItems =new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    $paginatedItems->setPath(url('/'));
+    return $paginatedItems;
 }
+
+    //
+
+}
+
+

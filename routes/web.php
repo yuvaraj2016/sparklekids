@@ -18,6 +18,7 @@
 //     return view('index');
 // });
 Route::get('/','homeController@index');
+
 Route::get('/about_sparkle_kidss', function () {
     return view('about_sparkle_kidss');
 });

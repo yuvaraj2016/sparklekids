@@ -74,6 +74,7 @@ text-shadow: 0 0 3px #FF0000;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+
 @keyframes ripple{
   0%{
     transform: scale(0.8);
@@ -108,6 +109,37 @@ text-shadow: 0 0 3px #FF0000;
     .text h4{
 
         margin-top:-2px!important;
+    }
+
+    .aboutus-section
+    {
+        margin-left:-15px!important;
+
+    }
+
+    .aboutus-section img
+    {
+        margin-left:-10px!important;
+
+    }
+
+    .aboutus-section .alert
+    {
+        margin-left:13px!important;
+        margin-top:13px!important;
+
+    }
+
+    .ssc
+    {
+        margin-left:-2px!important;
+
+    }
+
+    .about-us-right
+    {
+
+        margin-top:25px;
     }
 
 
@@ -211,76 +243,84 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
-                <div class="aboutus-section py-0">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 col-sm-6 col-xs-12 alert-success">
-                                <div class="aboutus">
-                                    {{-- <h2 class="aboutus-title">About Us</h2> --}}
-                                    <p class="aboutus-text">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
-                                    <p class="aboutus-text">A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.
 
-                                    </p>
-                                    {{-- <a class="aboutus-more" href="#">read more</a> --}}
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <div class="aboutus-banner">
-                                    <img src="{{ url('images/SK_Logo.PNG') }}" alt="" class="img-fluid img-responsive">
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="feature">
-                                    <div class="feature-box">
-                                        <div class="clearfix">
-                                            <div class="iconset">
-                                                <span class="glyphicon glyphicon-cog icon"></span>
-                                            </div>
-                                            <div class="feature-content">
-                                                {{-- <h4>Work with heart</h4> --}}
-                                                <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.
+                            <div class="col-md-6 col-sm-6 col-xs-12">
 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="feature-box">
-                                        <div class="clearfix">
-                                            <div class="iconset">
-                                                <span class="glyphicon glyphicon-cog icon"></span>
-                                            </div>
-                                            <div class="feature-content">
-                                                {{-- <h4>Reliable services</h4> --}}
-                                                <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
-                                            </div>
-                                        </div>
+                                <div class="card" style="width:100%;">
+
+                                    <!-- Card image -->
+                                    <div class="view overlay">
+                                      <img class="card-img-top" src="{{ url('images/course-3.jpg') }}" alt="Card image cap">
+                                      <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                      </a>
                                     </div>
 
-                                </div>
-                            </div>
-                            <div class="col-md-11">
-                            <div class="feature-box">
-                                <div class="clearfix">
-                                    <div class="iconset">
-                                        <span class="glyphicon glyphicon-cog icon"></span>
-                                    </div>
-                                    <div class="feature-content">
-                                        {{-- <h4>Great support</h4> --}}
-                                        <p class="alert alert-success">* Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.
+                                    <!-- Card content -->
+                                    <div class="card-body bg-white">
 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                      <!-- Title -->
+                                      <p class="aboutus-text">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
+                                      <p class="aboutus-text">A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.
 
+                                    </div>
+
+                                  </div>
+
+
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 ml-0 about-us-right">
+                                <div class="card"  style="width:100%;">
+
+                                    <!-- Card image -->
+
+                                    <!-- Card content -->
+                                    <div class="card-body bg-white">
+
+                                      <!-- Title -->
+                                      <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.
+                                      <!-- Text -->
+                                      <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
+                                      <!-- Button -->
+
+                                    </div>
+
+                                    <div class="view overlay">
+                                        <img class="card-img-top" src="{{ url('images/course-4.jpg') }}" alt="Card image cap">
+                                        <a href="#!">
+                                          <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                      </div>
+
+
+                                  </div>
 
 
                         </div>
                     </div>
                 </div>
 
+                {{-- <div class="col-md-11 pt-3">
+                    <div class="feature-box">
+                        <div class="clearfix">
+                            <div class="iconset">
+                                <span class="glyphicon glyphicon-cog icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                {{-- <h4>Great support</h4> --}}
+                                {{-- <p class="alert alert-success ml-5">* Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.
 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+ --}}
 
        <!--    <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
             -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -340,8 +380,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
-        </div>
-    </div>
+
 </section>
 
 
@@ -352,10 +391,10 @@ text-shadow: 0 0 3px #FF0000;
 
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 
-			<div class="container">
+			<div class="container pt-4">
 				<div class="row bg-white p-3">
 
-                    <div class="col-md-7" style="border:0px solid #1EAAF1; padding:0px;">
+                    <div class="col-md-7 ml-4 ssc" style="border:0px solid #1EAAF1; padding:0px;">
                         <div class="card py-0"  style="width:100%;">
                             <div class="card-header bg-primary p-2 text-center" style="color:white;font-weight:bold;font-size:20px">
                                 7 Star Curriculum
@@ -363,7 +402,7 @@ text-shadow: 0 0 3px #FF0000;
                             <div class="card-body bg-white py-0">
 
                                 <div class="row p-2" style="">
-                                    <p class="text-center bg-white offset-2 mtitle">Holistic development through 7 star curriculum</p>
+                                    <p class="text-center bg-white mtitle pt-3">Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
                                        <div class="col-lg-6" style="padding-top:30px;">
                                            <div class="services-2 d-flex">
                                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Connecting_with_nature_3.png" width="35px"></div>
@@ -438,7 +477,7 @@ text-shadow: 0 0 3px #FF0000;
                     </div>
                 </div>
 
-                          <div class="col-md-4 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:30px;">
+                          <div class="col-md-4 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:50px;">
                             <div class="card" style="width:100%;">
                                 <div class="card-header bg-primary text-center p-2" style="color:white;font-weight:bold;font-size:20px">
                                     Sparkle Advantages
@@ -1259,7 +1298,7 @@ text-shadow: 0 0 3px #FF0000;
       </div>
     <div class="container">
 
-        <div class="portfolio-item row">
+        <div class="row">
 
 
            {{-- /*resize image using css code* --}}
@@ -1269,16 +1308,34 @@ text-shadow: 0 0 3px #FF0000;
            {{-- @dd($albums) --}}
            {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
         <a href="{{ url('albums/'.$album->id) }}" class="album">
-            <div class="item gts col-lg-3 col-md-3 col-6 col-sm" style="border:3px solid #1EAAF1; padding:0px; margin-top:15px;">
+            <div class="item gts col-lg-3 col-md-3 col-6 col-sm" style="border:3px solid #fff; padding:0px; margin-top:15px;">
 
-                <div style="text-align:center;" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
+                <div style="text-align:center;background: #000046;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                " class="text-white p-2"><b>{{ $album->album_name }}</b></div>
                 <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light" style="margin-left:25px;">
                 <img class="img-fluid" src="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" alt="">
                 </a>
                 {{-- <address> --}}
               {{-- @if(!is_null($album->album_description)) --}}
+                <?php if($album->album_description!="")
+                {
+                ?>
+                    <p class="bg-white text-white p-2">{{ $album->album_description }}</p>
 
-                    <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
+                <?php
+                }
+                else
+                {
+                ?>
+                <p class="bg-white text-white p-2">No Description
+
+                </p>
+                <?php
+                }
+                ?>
+
 
                 {{-- </address> --}}
                 </div>
