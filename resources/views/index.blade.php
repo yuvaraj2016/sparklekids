@@ -303,14 +303,21 @@ text-shadow: 0 0 3px #FF0000;
           </div>
         </div>
         </div>
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    position: relative;
+    z-index: 0;
       </div>-->
 
-      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+      <div class="" style="background-image: url(images/slider.jpeg); background-size: cover;background-repeat: no-repeat; background-position: center center;height: 600px;   position: relative; margin-bottom:200px;
+      z-index: 0; " data-stellar-background-ratio="0.5">
       	<div class="overlay"></div>
         <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="row no-gutters  align-items-center justify-content-center" >
           <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Play Is The New Learn</h1>
+            <h1 class="mb-10 text-white ">Play Is The New Learn</h1>
             <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-3" style="color:white;"><b>Admission Open</b></a></p>
             <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
         </div>
@@ -377,7 +384,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
-<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/pexels-photo-1720188.jpeg); margin-top:0px;" data-stellar-background-ratio="0.5">
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/about.jpeg); margin-top:0px;" data-stellar-background-ratio="0.5">
 
   <div class="container" style="">
 
@@ -948,7 +955,7 @@ text-shadow: 0 0 3px #FF0000;
 
       </div>
 
-    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/contact.jpeg);" data-stellar-background-ratio="0.5">
 
     	<div class="container">
 
