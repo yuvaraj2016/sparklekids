@@ -97,12 +97,16 @@ public function paginate($items, $perPage = 5, $page = null, $options = [])
     {
 
         $imgpath = 'http://restschool.hridham.com/storage/cover_pictures/'.$path;
+        if(!file_exists(storage_path()."/app/public/cover_pictures/".$path))
+        {
+
         Image::make($imgpath)->fit('250','250')
             // ->fit('250','250', function ($constraint) {
             //     $constraint->upsize();
             //     $constraint->aspectRatio();
             // })
             ->save(storage_path()."/app/public/cover_pictures/".$path, 80);
+        }
 
         // Return the thumbnail url
         // return Storage::url("photos/".$path);

@@ -67,7 +67,7 @@ border-radius: 73px;
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light " id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/sparklelogo.jpg" class="img" width="250px"></a>
+        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/logo.png" class="img img-fluid" width="250px"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -135,5 +135,6 @@ $('.nav-item').removeClass('active');
 $(this).addClass('active');
 });
 </script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 </head>
 
