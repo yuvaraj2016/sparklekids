@@ -8217,8 +8217,8 @@
       right: 0;
       bottom: 0;
       content: '';
-      opacity: .3;
-      background: #f1453d; }
+      opacity: .2;
+      /* background: #f1453d; */}
     .hero-wrap.hero-wrap-2 {
       height: 300px; }
       .hero-wrap.hero-wrap-2 .slider-text {
@@ -8923,7 +8923,7 @@
       .ftco-footer .ftco-footer-widget h2 {
         font-weight: normal;
         color: #fff;
-        margin-bottom: 40px;
+        margin-bottom: 16px;
         font-size: 22px;
         font-weight: 500; }
       .ftco-footer .ftco-footer-widget .logo {
@@ -9768,4 +9768,17 @@
   box-shadow: none;
 
 
+  }
+
+
+  @media only screen and (max-width:480px)
+  {
+
+    .ftco-footer-social span {
+        margin-left:-24px!important;
+    }
+    .ftco-footer-social
+    {
+        margin-left:78px!important;
+    }
   }

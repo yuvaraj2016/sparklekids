@@ -136,13 +136,64 @@ text-shadow: 0 0 3px #FF0000;
 
     }
 
+    .ssc .text h4{
+        margin-top:6px!important;
+    }
+
     .about-us-right
     {
 
         margin-top:25px;
     }
 
+    .bannerinfo h1
+    {
+        font-size:20px!important;
+        margin-top:5px!important;
 
+    }
+
+    .bannerinfo p
+    {
+        font-size:14px!important;
+
+    }
+
+    .bannerinfo a
+    {
+        font-size:14px!important;
+        margin-top:-13px!important;
+        padding:10px!important;
+
+    }
+
+    .icon span
+    {
+        margin-left:-45px!important;
+
+    }
+
+    .sa .card-body
+    {
+        margin-left:-25px!important;
+
+    }
+
+    .sa .text h4{
+
+        margin-top:9px!important;
+    }
+
+    .gallerysec img {
+
+        margin-left:33px!important;
+    }
+
+    .ptitle
+    {
+        margin-top:15px!important;
+        padding-bottom:0px!important;
+    }
 }
 
 
@@ -290,22 +341,9 @@ text-shadow: 0 0 3px #FF0000;
 
 </style>
 
-    <section class="home-slider owl-carousel">
-      <!--<div class="slider-item" style="background-image:url(images/bg_1.jpg);">-->
-      <!--  <div class=" " style=" ">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Kids Are The Best <span>Explorers In The World</span></h1>
-            <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
+    {{-- <section class="home-slider owl-carousel">
 
-          </div>
-        </div>
-        </div>
-      </div>-->
-
-      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+      <div class="slider-item" style="background-image:url(images/banner.png);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -317,7 +355,25 @@ text-shadow: 0 0 3px #FF0000;
         </div>
         </div>
       </div>
-    </section>
+    </section> --}}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ url('images/banner.png')}}'); height:600px;">
+        <div class="overlay"></div>
+        <div class="container" style="padding-top:330px!important;">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" style="">
+            <div class="col-md-6 text-center ftco-animate bannerinfo" style="border:0px solid red;
+            background-clip: border-box;
+            background-color:rgb(28, 25, 23,0.5);">
+                <h1 class="mb-0 text-white">Play Is The New Learn</h1>
+
+                <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
+                <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-1" style="color:white;"><b>Admission Open</b></a></p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
     <section class="ftco-services ftco-no-pb">
 			<div class="container-wrap">
@@ -377,7 +433,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
-<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/pexels-photo-1720188.jpeg); margin-top:0px;" data-stellar-background-ratio="0.5">
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{ url('images/about_us_new.jpg') }}'); margin-top:0px;" data-stellar-background-ratio="0.5">
 
   <div class="container" style="">
 
@@ -431,7 +487,7 @@ text-shadow: 0 0 3px #FF0000;
 
                         <div class="row p-2 ml-4 mt-3" style="">
                             {{-- <p class="text-center bg-white mtitle pt-3 ml-4">Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p> --}}
-                               <div class="col-6" style="padding-top:30px;">
+                               <div class="col-lg-6" style="padding-top:30px;">
                                    <div class="services-2 d-flex hvr-float-shadow">
                                        <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center "><img src="images/Connecting_with_nature_3.png" width="35px"></div>
                                        <div class="text">
@@ -440,7 +496,7 @@ text-shadow: 0 0 3px #FF0000;
                                        </div>
                                    </div>
                                </div>
-                               <div class="col-6"  style="padding-top:30px;">
+                               <div class="col-lg-6"  style="padding-top:30px;">
                                    <div class="services-2 d-flex  hvr-float-shadow">
                                        <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
                                        <div class="text">
@@ -467,7 +523,7 @@ text-shadow: 0 0 3px #FF0000;
                                        </div>
                                    </div>
                                </div>
-                               <div class="col-lg-6" style="padding-top:25px;">
+                               <div class="col-lg-6" style="padding-top:23px;">
                                    <div class="services-2 d-flex hvr-float-shadow">
                                        <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
                                        <div class="text">
@@ -485,7 +541,7 @@ text-shadow: 0 0 3px #FF0000;
                                        </div>
                                    </div>
                                </div>
-                               <div class="col-lg-6"  style="padding-top:30px; padding-bottom:0px;">
+                               <div class="col-lg-6"  style="padding-top:22px; padding-bottom:11px;">
                                    <div class="services-2 d-flex  hvr-float-shadow">
                                        <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
                                        <div class="text">
@@ -948,7 +1004,7 @@ text-shadow: 0 0 3px #FF0000;
 
       </div>
 
-    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{url('images/contact_us.jpeg')}}');" data-stellar-background-ratio="0.5">
 
     	<div class="container">
 
@@ -1186,23 +1242,23 @@ text-shadow: 0 0 3px #FF0000;
 
            {{-- {{$album->cover_picture}} --}}
 
-            <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="col-md-6 col-lg-3 ftco-animate">
                 {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
 
-                <div class="blog-entry">
-                  <a href="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
-                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:30px;">
-                                    <div class="meta-date text-center p-2">
-                                    <?php
-                                          $date1= explode('-',$album->album_date);
-                                         ?>
+                <div class="blog-entry gallerysec">
+                  <a href="{{ url('albums/'.$album->id) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
+                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:7px;">
+                                    {{-- <div class="meta-date text-center p-2">
+
+                                        //   $date1= explode('-',$album->album_date);
+
                       <span class="day">{{ $date1[0] }}</span>
                       <span class="mos">{{ date("F", mktime(0, 0, 0, $date1[1], 1))}}</span>
                       <span class="yr">{{ $date1[2] }}</span>
-                    </div>
+                    </div> --}}
                   </a>
                   <div class="text bg-white p-4">
-                    <h3 class="heading">{{ $album->album_name }}</h3>
+                    <h3 class="heading text-center">{{ $album->album_name }}</h3>
                     <p>{{ str_limit(strip_tags($album->album_description), 120) }}</p>
                     @if (strlen($album->album_description)>120)
                     <div class="d-flex align-items-center mt-4">
@@ -1220,7 +1276,7 @@ text-shadow: 0 0 3px #FF0000;
 
         <div class="row justify-content-center">
             <div class="pagination">
-                {{ $albums->links() }}
+                <a class="btn btn-primary" href="{{ url('gallery') }}">Go To Gallery</a>
              </div>
 
         </div>
@@ -1397,9 +1453,11 @@ text-shadow: 0 0 3px #FF0000;
 
 
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-4">
                 <div class="pagination">
-                    {{ $testimonials->links() }}
+                    {{-- {{ $testimonials->links() }} --}}
+
+                    <a class="btn btn-primary" href="{{ url('testimonial') }}">Go To Testimonial</a>
                  </div>
 
             </div>

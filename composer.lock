@@ -1961,7 +1961,6 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -1977,9 +1976,6 @@
                 }
             ],
             "time": "2020-03-27T16:56:45+00:00"
-=======
-            "time": "2020-03-27T16:54:36+00:00"
->>>>>>> 39b79d1dcdcb617e2b57f821d165b5449a048936
         },
         {
             "name": "symfony/debug",
@@ -2490,9 +2486,6 @@
                 }
             ],
             "time": "2020-03-27T16:56:45+00:00"
-=======
-            "time": "2020-03-27T16:54:36+00:00"
->>>>>>> 39b79d1dcdcb617e2b57f821d165b5449a048936
         },
         {
             "name": "symfony/polyfill-ctype",
