@@ -70,18 +70,18 @@
                <div class="row py-2">
                @foreach($photos as $photo)
 
-               {{-- @dd($albums) --}}
+               {{-- @dd($photos) --}}
 
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center">
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center pt-4">
 
                     {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
 
-                   <a href="{{ url('storage/photos/'.$photo->photo)  }}" class="fancylight" data-fancybox-group="light">
+                   <a href="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" class="fancylight" data-fancybox-group="light">
                    <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
                    </a>
 
                      <p>{{ $photo->photo_description }}</p>
-                     <a href="{{ url('photo/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a>
+                     <a href="{{ url('photos/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a>
 
                 </div>
 

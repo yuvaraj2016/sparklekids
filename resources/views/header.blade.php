@@ -38,6 +38,8 @@ img .img {
   color: black;
 
   font-size: 17px;
+
+  font-weight:bold!important;
 }
 
 
@@ -45,13 +47,29 @@ img .img {
 
 background-color:#1eaaf1;
 border-radius: 73px;
-color:red;
+font-weight:bold!important;
+
 
 }
 .ss a:hover{
     color:orange;
 }
 
+@media only screen and (max-width: 480px)
+{
+    .nav-item a,span
+    {
+        padding-left:50px!important;
+
+
+    }
+
+    .contactinfo{
+        margin-left:-45px!important;
+        padding-left:0px!important;
+
+    }
+}
 
     </style>
 
@@ -67,8 +85,8 @@ color:red;
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light " id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/sparklelogo.jpg" class="img" width="350px"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/logo.png" class="img img-fluid d-none d-md-block d-lg-block d-xl-block" width="250px"></a>
+				<h4 class="d-block d-md-none d-lg-none d-xl-none bg-primary p-2 text-white">Sparkle Kidss</h4><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse col-md-4" id="ftco-nav">
@@ -87,9 +105,9 @@ color:red;
                         <li style="text-align:center"><a href="{{ url('/contact_form')}}" style="color:black;">Contact form to send email</a></li>
                       </ul>
                 </li>-->
-                <li class="nav-item active" style="border-radius:1px solid"><a href="#" class="nav-link "><span class="icon-home"></span> Home</a></li>
-	        	<li class="nav-item"><a href="{{ url('/testimonial')}}" class="nav-link"><span class="icon-users"></span> Testimonial</a></li>
-                <li class="nav-item"><a href="{{ url('/gallery')}}" class="nav-link"> <span class="icon-photo"></span> Gallery</a></li>
+                <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}" style="border-radius:1px solid;margin-right:4px;"><a href="#" class="nav-link "><span class="icon-home"></span> Home</a></li>
+	        	<li class="nav-item {{ (request()->is('testimonial')) ? 'active' : '' }}" style="margin-right:3px;"><a href="{{ url('/testimonial')}}" class="nav-link"><span class="icon-users"></span> Testimonial</a></li>
+                <li class="nav-item {{ (request()->is('gallery')) ? 'active' : '' }}"><a href="{{ url('/gallery')}}" class="nav-link"> <span class="icon-photo"></span> Gallery</a></li>
 
 	       <!-- 	<li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
 	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
@@ -107,9 +125,9 @@ color:red;
 
           </div>-->
 
-          <ul class="col-md-4 offset-1">
+          <ul class="col-md-4 offset-1 contactinfo">
             <li class="ss"><a href="tel:+9790751611"><span class="icon-phone2 "></span> 9790751611</a></li>
-            <li class="ss"><a href="mailto:sparklekidsschn@gmail.com"> <span class="icon-envelope "></span> sparklekidsschn@gmail.com</a></li>
+            <li class="ss"><a href="mailto:sparklekidsschn@gmail.com"> <span class="icon-envelope"></span> sparklekidsschn@gmail.com</a></li>
 
                         </ul>
 
@@ -135,5 +153,6 @@ $('.nav-item').removeClass('active');
 $(this).addClass('active');
 });
 </script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 </head>
 

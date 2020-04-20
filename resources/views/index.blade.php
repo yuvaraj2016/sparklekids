@@ -51,7 +51,6 @@ a:hover .pad {
     position: absolute;
    bottom: 80px;
    left: 0;
-
    margin-left: 110px;
     -webkit-text-stroke-width: 2px;
 background-color:gray;
@@ -59,6 +58,9 @@ border-radius: 73px;
 color:black;
 text-shadow: 0 0 3px #FF0000;
 }
+
+
+
 
 /*boostrap card*/
 .card {
@@ -71,6 +73,7 @@ text-shadow: 0 0 3px #FF0000;
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 
 @keyframes ripple{
   0%{
@@ -86,36 +89,291 @@ text-shadow: 0 0 3px #FF0000;
   }
 }
 
+
+@media only screen and (max-width: 600px) {
+
+
+    .sa
+    {
+        margin-top:30px!important;
+        margin-left: 8px!important;
+
+    }
+
+    .mtitle
+    {
+        margin-left:-5px!important;
+
+    }
+
+    .text h4{
+
+        margin-top:-2px!important;
+    }
+
+    .aboutus-section
+    {
+        margin-left:-15px!important;
+
+    }
+
+    .aboutus-section img
+    {
+        margin-left:-10px!important;
+
+    }
+
+    .aboutus-section .alert
+    {
+        margin-left:13px!important;
+        margin-top:13px!important;
+
+    }
+
+    .ssc
+    {
+        margin-left:-2px!important;
+
+    }
+
+    .ssc .text h4{
+        margin-top:6px!important;
+    }
+
+    .about-us-right
+    {
+
+        margin-top:25px;
+    }
+
+    .bannerinfo h1
+    {
+        font-size:20px!important;
+        margin-top:5px!important;
+
+    }
+
+    .bannerinfo p
+    {
+        font-size:14px!important;
+
+    }
+
+    .bannerinfo a
+    {
+        font-size:14px!important;
+        margin-top:-13px!important;
+        padding:10px!important;
+
+    }
+
+    .icon span
+    {
+        margin-left:-45px!important;
+
+    }
+
+    .sa .card-body
+    {
+        margin-left:-25px!important;
+
+    }
+
+    .sa .text h4{
+
+        margin-top:9px!important;
+    }
+
+    .gallerysec img {
+
+        margin-left:33px!important;
+    }
+
+    .ptitle
+    {
+        margin-top:15px!important;
+        padding-bottom:0px!important;
+    }
+}
+
+
+/* animations */
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hvr-sweep-to-right .text:hover h4
+{
+    color:#fff!important;
+    font-weight:bold;
+}
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  padding:10px;
+  margin-top:-20px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding:10px;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white!important;
+  padding:10px;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
 </style>
 
-    <section class="home-slider owl-carousel">
-      <!--<div class="slider-item" style="background-image:url(images/bg_1.jpg);">-->
-      <!--  <div class=" " style=" ">
+    {{-- <section class="home-slider owl-carousel">
+
+      <div class="slider-item" style="background-image:url(images/banner.png);">
       	<div class="overlay"></div>
         <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="row no-gutters  align-items-center justify-content-center" >
           <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Kids Are The Best <span>Explorers In The World</span></h1>
-            <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
-
-          </div>
-        </div>
-        </div>
-      </div>-->
-
-      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Play Is The New Learn</h1>
-            <p><a href="#contact_form" class="btn btn-secondary px-4 py-3 mt-3">Admission open</a></p>
+            <h1 class="mb-10 text-white ">Play Is The New Learn</h1>
+            <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-3" style="color:white;"><b>Admission Open</b></a></p>
             <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
         </div>
         </div>
         </div>
       </div>
-    </section>
+    </section> --}}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ url('images/banner.png')}}'); height:600px;">
+        <div class="overlay"></div>
+        <div class="container" style="padding-top:330px!important;">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" style="">
+            <div class="col-md-6 text-center ftco-animate bannerinfo" style="border:0px solid red;
+            background-clip: border-box;
+            background-color:rgb(28, 25, 23,0.5);">
+                <h1 class="mb-0 text-white">Play Is The New Learn</h1>
+
+                <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
+                <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-1" style="color:white;"><b>Admission Open</b></a></p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
     <section class="ftco-services ftco-no-pb">
 			<div class="container-wrap">
@@ -172,173 +430,279 @@ text-shadow: 0 0 3px #FF0000;
         </div>
 			</div>
 		</section>
-<br>
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-2 pb-2">
-  <div class="col-md-8 text-center heading-section ftco-animate">
-    <h2 class="mb-4" style="animation: ripple 15s infinite; padding-bottom:!important; margin-bottom:0px!important;"><span>About</span> Us</h2>
-
-  </div>
-</div>
-
-        <div class="row" style="" class="p-4" id="c">
-            <div class="col-md-6 course d-lg-flex ftco-animate " style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            padding: 10px;
-            background: white; border-right:3px solid rgba(0, 0, 0, .1);">
-                <div class="img" style="background-image: url(images/course-1.jpg);"></div>
-                <div class="text bg-light p-4">
-                    {{-- <h3><a href="#">Arts Lesson</a></h3>
-                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p class="p-2">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.</p>
-                </div>
-            </div>
-            <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            padding: 10px;
-            background: white;">
-                <div class="img" style="background-image: url(images/course-2.jpg); border:0px solid orange; box-shadow:"></div>
-                <div class="text bg-light p-4">
-                    {{-- <h3><a href="#">Language Lesson</a></h3>
-                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p>A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.</p>
 
 
+
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{ url('images/about_us_new.jpg') }}'); margin-top:0px;" data-stellar-background-ratio="0.5">
+
+  <div class="container" style="">
+
+    <div class="row justify-content-end">
+      <div class="col-md-6 py-5 px-md-5" style="background-color:rgb(255, 255, 255,90%);">
+        <div class="heading-section heading-section-white ftco-animate mb-5">
+          <h2 class="mb-4" style="padding-bottom:!important; margin-bottom:0px!important; color:#000;">About Us</h2>
+          {{-- <h2 class="mb-4">Please Enter Your Details</h2> --}}
+         <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+          <p style="color:#000;">Learning is a process of acquiring new or modifying existing knowledge, behaviors, skills, values or preferences. This is a lifelong process.
+
+          </p>
+          <p  style="color:#000;">A child starts learning from the womb. The experiences a child goes through till the age of 5, plays a crucial role that impacts his / her future. The type of learning that is dominant in each child may vary.
+
+          </p>
+          <p  style="color:#000;">We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.
+          </p>
+          <p  style="color:#000;">Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.
+
+          </p>
+          <p  style="color:#000;">Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.
+
+          </p>
+        </div>
+            </div>
+           <!-- <div class="col-md-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.1146356065!2d79.92880799953032!3d13.04804380118091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1585555432621!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+                        </div>-->
+    </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="ftco-section ftco-no-pt ftc-no-pb">
+
+    <div class="container-fluid pt-0">
+        <div class="row bg-white pt-0">
+
+
+            <div class="col-md-6 ssc" style="border:0px solid #1EAAF1; padding:0px;">
+                <div class="card py-0"  style="width:100%;">
+                    <div class="card-header bg-primary p-2 text-center" style="color:white;font-weight:bold;font-size:20px">
+                        7 Star Curriculum
+                    </div>
+                    <div class="card-body bg-white py-0">
+
+                        <div class="row p-2 ml-4 mt-3" style="">
+                            {{-- <p class="text-center bg-white mtitle pt-3 ml-4">Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p> --}}
+                               <div class="col-lg-6" style="padding-top:30px;">
+                                   <div class="services-2 d-flex hvr-float-shadow">
+                                       <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center "><img src="images/Connecting_with_nature_3.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Connecting With <br>Nature</h4>
+                                       <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6"  style="padding-top:30px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow">
+                                       <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Foster Individual <br>Potential</h4>
+                                       <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6"  style="padding-top:30px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow">
+                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Social &amp; Emotional <br>Development </h4>
+                                           <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6"  style="padding-top:30px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow">
+                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Awareness.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Personal <br>Awareness</h4>
+                                           <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6" style="padding-top:23px;">
+                                   <div class="services-2 d-flex hvr-float-shadow">
+                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Cognitive <br>Development</h4>
+                                           <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6" style="padding-top:25px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow">
+                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Language.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Speech &amp; Language<br> Development</h4>
+                                           <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-lg-6"  style="padding-top:22px; padding-bottom:11px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow">
+                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
+                                       <div class="text">
+                                           <h4>Gross &amp; Fine <br>Motor Development</h4>
+                                           <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                       </div>
+                                   </div>
+                               </div>
+
+
+                      {{-- <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#!" class="btn btn-primary">Go somewhere</a> --}}
+
+                  </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            padding: 10px;
-            background: white; margin-right:0px; border-right:3px solid rgba(0, 0, 0, .1);">
-                <div class="img" style="background-image: url(images/course-3.jpg);"></div>
-                <div class="text bg-light p-4">
-                    {{-- <h3><a href="#">Music Lesson</a></h3>
-                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p>We provide safe and joyful environment for our children to explore. Because, learning is understood not only as a cognitive experience, but also as one that derives from the emotional, personal, social, cultural and preconceptual.</p>
+
+                  <div class="col-md-6 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:0px;">
+                    <div class="card" style="width:100%;margin-left:0px;">
+                        <div class="card-header bg-primary text-center p-2" style="color:white;font-weight:bold;font-size:20px">
+                            Sparkle Advantages
+                        </div>
+                        <div class="card-body bg-white">
+                          <div class="row ml-5 mt-3">
+
+                            <div class="col-lg-6" style="padding-top:17px;">
+                              <div class="services-2 d-flex  hvr-float-shadow">
+                                  <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-book text-white mx-1" style="font-size:30px;"></i></div>
+                                  <div class="text">
+                                      <h4>7 Star Curriculum</h4>
+                                  <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-lg-6" style="padding-top:17px;">
+                            <div class="services-2 d-flex  hvr-float-shadow">
+                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-chalkboard-teacher text-white mx-1" style="font-size:30px;"></i></div>
+                                <div class="text">
+                                    <h4>Well Trained Teachers</h4>
+                                <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6" style="padding-top:35px;">
+                          <div class="services-2 d-flex  hvr-float-shadow">
+                              <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-pray text-white mx-1" style="font-size:30px;"></i></div>
+                              <div class="text">
+                                  <h4>Story Yoga</h4>
+                              <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-6" style="padding-top:35px;">
+                        <div class="services-2 d-flex  hvr-float-shadow">
+                            <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-users text-white mx-1" style="font-size:30px;"></i></div>
+                            <div class="text">
+                                <h4>Parent App</h4>
+                            <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" style="padding-top:30px;">
+                      <div class="services-2 d-flex  hvr-float-shadow">
+                          <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-swimmer text-white mx-1" style="font-size:30px;"></i></div>
+                          <div class="text">
+                              <h4>Splashpool & Sandplay</h4>
+                          <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6" style="padding-top:30px;">
+                    <div class="services-2 d-flex  hvr-float-shadow">
+                        <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-box text-white mx-1" style="font-size:30px;"></i></div>
+                        <div class="text">
+                            <h4>Smart Box</h4>
+                        <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6" style="padding-top:30px;">
+                  <div class="services-2 d-flex  hvr-float-shadow">
+                      <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-tasks text-white mx-1" style="font-size:30px;"></i></div>
+                      <div class="text">
+                          <h4>Daily Worksheet</h4>
+                      <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <div class="col-lg-6" style="padding-top:30px;">
+                <div class="services-2 d-flex  hvr-float-shadow">
+                    <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-school text-white mx-1" style="font-size:30px;"></i></div>
+                    <div class="text">
+                        <h4>Montessori</h4>
+                    <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 course d-lg-flex ftco-animate" style="-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-            -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-            padding: 10px;
-            background: white;">
-                <div class="img" style="background-image: url(images/course-4.jpg);"></div>
-                <div class="text bg-light p-4">
-                    {{-- <h3><a href="#">Sports Lesson</a></h3>
-                    <p class="subheading"><span>Class time:</span> 9:00am - 10am</p> --}}
-                    <p>Sparkle kidss provides the best start and the right foundation for your child, by imparting a broad range of knowledge and skills.</p>
-                    <p>Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p>
-                </div>
-            </div>
+
+
+
+
+
+
+
+                          </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </div>
 </section>
 
 
-		<section class="ftco-section ftco-no-pt ftc-no-pb">
-			<div class="container">
-				<div class="row bg-light p-4">
-
-					<div class="col-md-8 wrap-about ftco-animate" style="margin-top:0px;">
-          	<h2 class="mb-4 bg-secondary text-center" style="border-radius:30px; font-weight:bold; color:#fff;">7 Star Curriculum</h2>
-                        <!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>-->
-                        <p class="text-center bg-white"> Holistic development through 7 star curriculum</p>
-						<div class="row p-2 bg-white" style="">
-
-							<div class="col-lg-6" style="padding-top:30px;">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Connecting_with_nature_3.png" width="35px"></div>
-									<div class="text">
-										<h4>Connecting With Nature</h4>
-									<!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6"  style="padding-top:30px;">
-								<div class="services-2 d-flex">
-									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
-									<div class="text">
-										<h4>Foster Individual Potential</h4>
-									<!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
-									<div class="text">
-										<h4>Social &amp; Emotional Development </h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Awareness.png" width="35px"></div>
-									<div class="text">
-										<h4>Personal Awarness</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
-									<div class="text">
-										<h4>Cognitive Development</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Language.png" width="35px"></div>
-									<div class="text">
-										<h4>Speech &amp; Language Development</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-                            </div>
-                            <div class="col-lg-6 pb-0">
-								<div class="services-2 d-flex">
-									<div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
-									<div class="text">
-										<h4>Gross &amp; Fine Motor Development</h4>
-										<!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
-									</div>
-								</div>
-                            </div>
-
-						</div>
-                    </div>
-                    <div class="col-md-4 order-md-last wrap-about wrap-about bg-primary content1">
 
 
-						<div class="text ftco-animate ">
-                  <h3 class="mb-2 bg-secondary text-center" style="color:white; border-radius:30px; font-weight:bold;">Sparkle Advantages</h3>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><i class="fas fa-book text-primary mx-2" style="font-size:30px;vertical-align:middle; margin-right:40px;"></i><span style="margin-left:20px;">7 Star Curriculum</span></li>
-                    <li class="list-group-item"><i class="fas fa-chalkboard-teacher text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:12px;">Well Trained Teachers</span></li>
-                    <li class="list-group-item"><i class="fas fa-pray text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:23px;"> Story Yoga</span></li>
-                    <li class="list-group-item"><i class="fas fa-users text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:16px;">Parent App</span></li>
-                    <li class="list-group-item"><i class="fas fa-swimmer text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:17px;">Splashpool & Sandplay</span></li>
-                    <li class="list-group-item"><i class="fas fa-box text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:20px;">Smart Box</span></li>
-                    <li class="list-group-item"><i class="fas fa-tasks text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i><span style="margin-left:25px;">Daily Worksheet</span></li>
-                    <li class="list-group-item"><i class="fas fa-school text-primary mx-2" style="font-size:30px;vertical-align:middle;"></i> <span style="margin-left:16px;">Montessori</span></li>
-                  </ul>
-		<!--<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. And if she hasn’t been rewritten, then they are still using her.</p>
-							<p><a href="#" class="btn btn-secondary px-4 py-3">Read More</a></p>-->
-						</div>
-					</div>
-				</div>
+    <section class="ftco-section ftco-consult ftco-no-pt ftc-no-pb">
+
+			<div class="container-fluid pt-4" style="margin-left:0px;margin-right:0px;width:100%;">
+				<div class="row bg-white pt-3">
+
+
+                </div>
+              </div>
             </div>
 
-		</section>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
 
 	<!--	<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
@@ -634,13 +998,13 @@ text-shadow: 0 0 3px #FF0000;
       </div>
     </section>-->
     <div id="contact_form"></div>
-    <div  style="padding-top:40px"></div>
+    <div  style="padding-top:20px"></div>
     <div class="text-center heading-section ftco-animate"  >
-        <h2 class="mb-4" >Contact Form</h2>
+        <h2 class="mb-4 text-center text-primary">Contact Form</h2>
 
       </div>
 
-    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{url('images/contact_us.jpeg')}}');" data-stellar-background-ratio="0.5">
 
     	<div class="container">
 
@@ -852,240 +1216,78 @@ text-shadow: 0 0 3px #FF0000;
         </div>
 			</div>
         </section>-->
-        <br><br>
-<section>
+
+<!--gallery-->
+<section class="ftco-section ftco-no-pb bg-light">
     <div class=" heading-section ftco-animate">
-        <h2 class="mb-4 text-center" >Gallery</h2>
+        <h2 class="mb-4 text-center ptitle" >Gallery</h2>
 
       </div>
+
+
+
+
+
+
     <div class="container">
 
-        <!--<div class="portfolio-menu mt-2 mb-4">
-           <ul>
-              <li class="btn btn-outline-dark active" data-filter="*">All</li>
-              <li class="btn btn-outline-dark" data-filter=".gts">Childran</li>
-              <li class="btn btn-outline-dark" data-filter=".lap">Course</li>
-              <li class="btn btn-outline-dark text" data-filter=".selfie">Teachers</li>
-           </ul>
-        </div>-->
-        <div class="portfolio-item row">
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm ">
+        <div class="row">
 
-           <a href="{{ url('gallery')}}" class="fancylight" data-fancybox-group="light">
-              <img class="img-fluid" src="images/image_6.jpg" alt="">
 
-              <div class="pad">Course</div>
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="{{ url('gallery')}}" class="fancylight" data-fancybox-group="light">
-              <img class="img-fluid" src="images/image_1.jpg" alt="">
-              <div class="pad">Childran</div>
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="{{ url('gallery')}}" class="fancylight " data-fancybox-group="light">
-              <img class="img-fluid" src="images/image_2.jpg" alt="">
-              <div class="pad">Sports</div>
+           {{-- /*resize image using css code* --}}
 
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="{{ url('gallery')}}" class="fancylight " data-fancybox-group="light">
-              <img class="img-fluid" src="images/image_3.jpg" alt="">
-              <div class="pad">Teacher</div>
-              </a>
-           </div>
-         <!--  <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/image_4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/image_4.jpg" alt="">
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/image_5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/image_5.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/course-1.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/course-1.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/course-2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/course-2.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/course-3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/course-3.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/course-4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/course-4.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/course-5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/course-5.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/course-6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/course-6.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-1.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-1.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-2.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-3.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-4.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-5.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-6.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-7.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="images/teacher-8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="images/teacher-8.jpg" alt="">
-              </a>
-           </div>-->
-          <!-- <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg" alt="">
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg" alt="">
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" alt="">
-              </a>
-           </div>
-           <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" alt="">
-              </a>
-           </div>
-           <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" alt="">
-              </a>
-           </div>
-           <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-              <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-              <img class="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="">
-              </a>
-           </div>-->
+           {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
+
+            @foreach($albums as $album)
+
+           {{-- {{$album->cover_picture}} --}}
+
+            <div class="col-md-6 col-lg-3 ftco-animate">
+                {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
+
+                <div class="blog-entry gallerysec">
+                  <a href="{{ url('albums/'.$album->id) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
+                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:7px;">
+                                    {{-- <div class="meta-date text-center p-2">
+
+                                        //   $date1= explode('-',$album->album_date);
+
+                      <span class="day">{{ $date1[0] }}</span>
+                      <span class="mos">{{ date("F", mktime(0, 0, 0, $date1[1], 1))}}</span>
+                      <span class="yr">{{ $date1[2] }}</span>
+                    </div> --}}
+                  </a>
+                  <div class="text bg-white p-4">
+                    <h3 class="heading text-center">{{ $album->album_name }}</h3>
+                    <p>{{ str_limit(strip_tags($album->album_description), 120) }}</p>
+                    @if (strlen($album->album_description)>120)
+                    <div class="d-flex align-items-center mt-4">
+                        <p class="mb-0 offset-2"><a href="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                    </div>
+                    @endif
+
+                  </div>
+                </div>
+              </div>
+              @endforeach
+
+
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="pagination">
+                <a class="btn btn-primary" href="{{ url('gallery') }}">Go To Gallery</a>
+             </div>
+
         </div>
      </div>
 
 </section>
-<br>
+
+
+
+
+
 	<!--	<section class="ftco-gallery">
     	<div class="container-wrap">
             <div class=" heading-section ftco-animate">
@@ -1125,11 +1327,11 @@ text-shadow: 0 0 3px #FF0000;
         </div>
     	</div>
     </section>-->
-    <section class="ftco-section bg-light">
+    <!--<section class="ftco-section bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
       <div class="col-md-8 text-center heading-section ftco-animate">
-        <h2 class="mb-4"><span>Recent</span> Testimonials</h2>
+        <h2 class="mb-4" style="color:#1eaaf1;"<span>Recent</span> Testimonials</h2>
         <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
       </div>
     </div>
@@ -1147,10 +1349,11 @@ text-shadow: 0 0 3px #FF0000;
             <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div class="d-flex align-items-center mt-4">
-            <p class="mb-0"><a href="{{ url('test_children')}}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-            <p class="mb-0 offset-2"><a href="{{ url('testimonial')}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-            </div>
+
+            <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+            <p class="mb-0 offset-2"><a href="{{ url('test_children')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
+        </div>
           </div>
         </div>
       </div>
@@ -1167,9 +1370,10 @@ text-shadow: 0 0 3px #FF0000;
             <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div class="d-flex align-items-center mt-4">
-            <p class="mb-0"><a href="{{('test_teacher')}}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-                <p class="mb-0 offset-2"><a href="{{ url('testimonial')}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                <p class="mb-0 offset-2"><a href="{{('test_teacher')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
           </div>
         </div>
@@ -1187,16 +1391,80 @@ text-shadow: 0 0 3px #FF0000;
             <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div class="d-flex align-items-center mt-4">
-            <p class="mb-0"><a href="{{ url('test_sports')}}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
 
-                <p class="mb-0 offset-2"><a href="{{ url('testimonial')}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+
+                <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                <p class="mb-0  offset-2"><a href="{{ url('test_sports')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
         </div>
-    </section>
+    </section>-->
+<section class="ftco-section ftco-no-pb bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-1 pb-2">
+  <div class="col-md-8 text-center heading-section ftco-animate">
+    <h2 class="mb-4 text-primary pt-4">Latest Testimonials</h2>
+    {{-- <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p> --}}
+  </div>
+</div>
+        <div class="row">
+
+
+@php
+ $test=new App\Http\Controllers\homecontroller;
+ $testimonials = $test->testimonial();
+@endphp
+{{-- {{ $testimonials=App\Http\Controllers\homecontroller::testimonial() }} --}}
+
+
+
+            @foreach($testimonials as $testimonial)
+            {{-- @dd($albums) --}}
+
+            <div class="col-md-6 col-lg-4 ftco-animate">
+                <div class="blog-entry">
+                  <a href="{{ url('testimonial/'.$testimonial->id)}}" class="block-20 d-flex align-items-end" style="background-image: url('http://restschool.hridham.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
+                                    <div class="meta-date text-center p-2">
+                                    <?php
+                                          $date= explode('-',$testimonial->testimonial_date);
+                                         ?>
+                      <span class="day">{{ $date[0] }}</span>
+                      <span class="mos">{{ date("F", mktime(0, 0, 0, $date[1], 1))}}</span>
+                      <span class="yr">{{ $date[2] }}</span>
+                    </div>
+                  </a>
+                  <div class="text bg-white p-4">
+                    <h3 class="heading">{{ $testimonial->testimonial_title }}</h3>
+                    <p>{{ str_limit(strip_tags($testimonial->testimonial_desc), 120) }}</p>
+                    @if (strlen($testimonial->testimonial_desc)>120)
+                    <div class="d-flex align-items-center mt-4">
+                        <p class="mb-0 offset-2"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                    </div>
+                    @endif
+
+                  </div>
+                </div>
+              </div>
+             @endforeach
+
+
+
+            </div>
+            <div class="row justify-content-center pb-4">
+                <div class="pagination">
+                    {{-- {{ $testimonials->links() }} --}}
+
+                    <a class="btn btn-primary" href="{{ url('testimonial') }}">Go To Testimonial</a>
+                 </div>
+
+            </div>
+        </div>
+
+</section>
+
 
 <!--<section class="ftco-section ftco-no-pb">
         <div class="container">

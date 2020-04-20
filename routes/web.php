@@ -11,12 +11,14 @@
 |
 */
 
-use App\Http\Controllers\TestimonialsController;
-use App\Http\Response;
+// use App\Http\Controllers\TestimonialsController;
+// use App\Http\Response;
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/','homeController@index');
+
 Route::get('/about_sparkle_kidss', function () {
     return view('about_sparkle_kidss');
 });
@@ -27,22 +29,29 @@ Route::get('/contact_form', function () {
     return view('contact_form');
 });
 Route::get('/testimonial','TestimonialsController@index');
+
 Route::get('/testimonial/{id}','TestimonialsController@show');
+
 Route::get('/test_children', function () {
     return view('test_children');
 });
+
 Route::get('/test_teacher', function () {
     return view('test_teacher');
 });
-Route::get('/test_sportsr', function () {
+Route::get('/test_sports', function () {
     return view('test_sports');
 });
+
 Route::get('contact-form', 'ContactController@getContact');
+
 Route::post('contact-form', 'ContactController@saveContact');
 
 Route::get('/gallery','AlbumController@index');
 
 Route::get('/albums/{id}','PhotoController@index');
+
+Route::get('/photos/{id}','PhotoController@show');
 
 
 // Route::get('imager/{src?}', 'PhotoController@imageresize');

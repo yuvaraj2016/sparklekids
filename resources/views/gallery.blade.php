@@ -1,348 +1,105 @@
 
-    <!-- END nav -->
-    @extends('master')
+   @extends('master')
 
-    @section('content')
+   @section('content')
 
 
-    {{-- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Gallery</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="{{ url('/')}}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Gallery <i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
-        </div>
+   <section>
+    <div class=" heading-section ftco-animate">
+        <h2 class="mb-4 text-center ptitle text-primary" >Gallery</h2>
+
       </div>
-    </section> --}}
-   <!-- <section class="ftco-gallery">
-    	<div class="container-wrap">
-            <div class="text-center heading-section ftco-animate">
-                <h2 class="mb-4" >Gallery</h2>
+    <div class="container">
 
-              </div>
-    		<div class="row no-gutters">
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-1.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_2.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_3.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_4.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-						<a href="images/image_5.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_5.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-						<a href="images/image_6.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_6.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-						<a href="images/person_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/person_1.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
+        <div class="portfolio-item row">
+
+           {{-- /*resize image using css code* --}}
+
+           {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
+           @foreach($albums as $album)
+           {{-- @dd($albums) --}}
+           {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
+        <a href="{{ url('albums/'.$album->id) }}" class="album">
+            <div class="item gts col-lg-3 col-md-3 col-6 col-sm" style="border:3px solid #1EAAF1; padding:0px; margin-top:15px;">
+
+                <div style="text-align:center;" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
+                <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light" style="margin-left:25px;">
+                <img class="img-fluid" src="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" alt="">
+                </a>
+                {{-- <address> --}}
+              {{-- @if(!is_null($album->album_description)) --}}
+
+                    <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
+
+                {{-- </address> --}}
+                </div>
+            {{-- @endif --}}
+            </a>
+            @endforeach
+
+
         </div>
-    	</div>
-    </section>-->
 
+        <div class="row justify-content-center">
+            <div class="pagination">
+                {{ $albums->links() }}
+             </div>
 
-    <section>
+        </div>
+     </div>
+
+</section>
+
+    <section class="bg-light">
         <div class=" heading-section ftco-animate">
-            <h2 class="mb-4 text-center ptitle" >Gallery</h2>
+            <h2 class="mb-4 text-center ptitle text-primary" >Gallery</h2>
 
           </div>
-        <div class="container">
+          <div class="container">
 
-            <!--<div class="portfolio-menu mt-2 mb-4">
-               <ul>
-                  <li class="btn btn-outline-dark active" data-filter="*">All</li>
-                  <li class="btn btn-outline-dark" data-filter=".gts">Childran</li>
-                  <li class="btn btn-outline-dark" data-filter=".lap">Course</li>
-                  <li class="btn btn-outline-dark text" data-filter=".selfie">Teachers</li>
-               </ul>
-            </div>-->
-            <div class="portfolio-item row">
-             <!--  <div class="item gts col-lg-3 col-md-4 col-6 col-sm ">
+            <div class="row">
 
-               <a href="{{ url('gallery')}}" class="fancylight" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/image_6.jpg" alt="">
 
-                  <div class="pad">Course</div>
-                  </a>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="{{ url('gallery')}}" class="fancylight" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/image_1.jpg" alt="">
-                  <div class="pad">Childran</div>
-                  </a>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="{{ url('gallery')}}" class="fancylight " data-fancybox-group="light">
-                  <img class="img-fluid" src="images/image_2.jpg" alt="">
-                  <div class="pad">Sports</div>
+           {{-- {{$album->cover_picture}} --}}
 
-                  </a>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="{{ url('gallery')}}" class="fancylight " data-fancybox-group="light">
-                  <img class="img-fluid" src="images/image_3.jpg" alt="">
-                  <div class="pad">Teacher</div>
-                  </a>
-               </div>-->
+               {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
 
-               @foreach($albums as $album)
-               {{-- @dd($albums) --}}
-            <a href="{{ url('albums/'.$album->id) }}" class="album">
-                <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                @foreach($albums as $album)
 
-                    <div style="text-align:center" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
-                    <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light">
-                    <img class="img-fluid" src="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" alt="">
-                    </a>
-                    {{-- <address> --}}
-                        <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
+               {{-- {{$album->cover_picture}} --}}
 
-                    {{-- </address> --}}
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
+
+                    <div class="blog-entry">
+                      <a href="{{ url('albums/'.$album->id) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
+                        <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:7px;">
+                                        {{-- <div class="meta-date text-center p-2">
+
+                                            //   $date1= explode('-',$album->album_date);
+
+                          <span class="day">{{ $date1[0] }}</span>
+                          <span class="mos">{{ date("F", mktime(0, 0, 0, $date1[1], 1))}}</span>
+                          <span class="yr">{{ $date1[2] }}</span>
+                        </div> --}}
+                      </a>
+                      <div class="text bg-white p-4">
+                        <h3 class="heading text-center">{{ $album->album_name }}</h3>
+                        <p>{{ str_limit(strip_tags($album->album_description), 120) }}</p>
+                        @if (strlen($album->album_description)>120)
+                        <div class="d-flex align-items-center mt-4">
+                            <p class="mb-0 offset-2"><a href="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" class="btn btn-secondary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                        </div>
+                        @endif
+
+                      </div>
                     </div>
-                </a>
-                @endforeach
-                {{-- <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-               <div style="text-align:center"><b>Childran</b></div>
-                  <a href="images/image_4.jpg" class="fancylight" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/image_4.jpg" alt="">
-                  </a>
-                  <address>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic</p>
+                  </div>
+                  @endforeach
 
-                 </address>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                <div style="text-align:center"><b>Sports</b></div>
-                  <a href="images/image_5.jpg" class="fancylight " data-fancybox-group="light">
-                  <img class="img-fluid" src="images/image_5.jpg" alt="">
-                  </a>
-                  <address>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic</p>
 
-                                      </address>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                <div style="text-align:center"><b>Course</b></div>
-                <a href="images/teacher-7.jpg" class="fancylight " data-fancybox-group="light">
-                <img class="img-fluid" src="images/course-6.jpg" alt="">
-                </a>
-                <address>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic</p>
-
-                                      </address>
-             </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                <div style="text-align:center"><b>Teacher</b></div>
-                  <a href="images/course-2.jpg" class="fancylight " data-fancybox-group="light">
-                  <img class="img-fluid" src="images/course-2.jpg" alt="">
-                  </a>
-                  <address>
-<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic</p>
-
-                  </address>
-               </div> --}}
-             <!--  <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/course-3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/course-3.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/course-4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/course-4.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/course-5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/course-5.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/course-6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/course-6.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-1.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-1.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-2.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-3.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-4.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-5.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-6.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-7.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="images/teacher-8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="images/teacher-8.jpg" alt="">
-                  </a>
-               </div>-->
-              <!-- <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg" alt="">
-                  </a>
-               </div>
-               <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
-                  <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                  <img class="img-fluid" src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg" alt="">
-                  </a>
-               </div>-->
             </div>
+
 
             <div class="row justify-content-center">
                 <div class="pagination">
@@ -413,7 +170,14 @@
         		</div>
         	</div>
         </div>
-    	</div>
-    </section>-->
 
+        <div class="row justify-content-center">
+            <div class="pagination">
+                <a class="btn btn-primary" href="{{ url('gallery') }}">Load More</a>
+             </div>
 
+        </div>
+     </div>
+
+</section>
+@endsection

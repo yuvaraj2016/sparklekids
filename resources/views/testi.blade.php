@@ -3,7 +3,7 @@
     @extends('master')
 
         @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
+   <!-- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -13,13 +13,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <section class="ftco-section ftco-no-pb">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
       <div class="col-md-8 text-center heading-section ftco-animate">
-        <h2 class="mb-4">Latest Posts</h2>
+        <h2 class="mb-4 text-primary">Latest Posts</h2>
         <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
       </div>
     </div>
@@ -55,7 +55,14 @@
                 </div>
 
             </div>
+            <div class="row justify-content-center pb-4">
+                <div class="pagination">
+                    <a href="{{ url()->previous() }}" class="album bg-primary text-white p-2">Back</a>
 
+                    {{-- {{ $photos->links() }} --}}
+                 </div>
+
+            </div>
     </section>
 @endsection
 
