@@ -346,9 +346,9 @@ text-shadow: 0 0 3px #FF0000;
       <div class="slider-item" style="background-image:url(images/banner.png);">
       	<div class="overlay"></div>
         <div class="container">
-          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="row no-gutters  align-items-center justify-content-center" >
           <div class="col-md-8 text-center ftco-animate">
-            <h1 class="mb-4">Play Is The New Learn</h1>
+            <h1 class="mb-10 text-white ">Play Is The New Learn</h1>
             <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-3" style="color:white;"><b>Admission Open</b></a></p>
             <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
         </div>

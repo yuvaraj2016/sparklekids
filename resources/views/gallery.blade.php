@@ -1,81 +1,54 @@
 
-    <!-- END nav -->
-    @extends('master')
+   @extends('master')
 
-    @section('content')
+   @section('content')
 
 
-    {{-- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Gallery</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="{{ url('/')}}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Gallery <i class="ion-ios-arrow-forward"></i></span></p>
-          </div>
-        </div>
+   <section>
+    <div class=" heading-section ftco-animate">
+        <h2 class="mb-4 text-center ptitle text-primary" >Gallery</h2>
+
       </div>
-    </section> --}}
-   <!-- <section class="ftco-gallery">
-    	<div class="container-wrap">
-            <div class="text-center heading-section ftco-animate">
-                <h2 class="mb-4" >Gallery</h2>
+    <div class="container">
 
-              </div>
-    		<div class="row no-gutters">
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-1.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_2.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_3.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_4.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-						<a href="images/image_5.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_5.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-						<a href="images/image_6.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_6.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-                    </div>
-                    <div class="col-md-3 ftco-animate">
-						<a href="images/person_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/person_1.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
+        <div class="portfolio-item row">
+
+           {{-- /*resize image using css code* --}}
+
+           {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
+           @foreach($albums as $album)
+           {{-- @dd($albums) --}}
+           {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
+        <a href="{{ url('albums/'.$album->id) }}" class="album">
+            <div class="item gts col-lg-3 col-md-3 col-6 col-sm" style="border:3px solid #1EAAF1; padding:0px; margin-top:15px;">
+
+                <div style="text-align:center;" class="bg-primary text-white p-2"><b>{{ $album->album_name }}</b></div>
+                <a href="http://restschool.hridham.com/storage/cover_pictures/{{ $album->cover_picture }}" class="fancylight" data-fancybox-group="light" style="margin-left:25px;">
+                <img class="img-fluid" src="{{ url('storage/cover_pictures/'.$album->cover_picture) }}" alt="">
+                </a>
+                {{-- <address> --}}
+              {{-- @if(!is_null($album->album_description)) --}}
+
+                    <p class="bg-primary text-white p-2">{{ $album->album_description }}</p>
+
+                {{-- </address> --}}
+                </div>
+            {{-- @endif --}}
+            </a>
+            @endforeach
+
+
         </div>
-    	</div>
-    </section>-->
 
+        <div class="row justify-content-center">
+            <div class="pagination">
+                {{ $albums->links() }}
+             </div>
+
+        </div>
+     </div>
+
+</section>
 
     <section class="bg-light">
         <div class=" heading-section ftco-animate">
@@ -87,7 +60,7 @@
             <div class="row">
 
 
-               {{-- /*resize image using css code* --}}
+           {{-- {{$album->cover_picture}} --}}
 
                {{-- style="object-fit:contain;width:100%;height:auto;"  --}}
 
@@ -197,7 +170,14 @@
         		</div>
         	</div>
         </div>
-    	</div>
-    </section>-->
 
+        <div class="row justify-content-center">
+            <div class="pagination">
+                <a class="btn btn-primary" href="{{ url('gallery') }}">Load More</a>
+             </div>
 
+        </div>
+     </div>
+
+</section>
+@endsection
