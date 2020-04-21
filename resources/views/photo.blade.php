@@ -61,7 +61,7 @@
                 <div class="row items gts justify-content-center align-items-center">
                     <div class="col-lg-12 text-center">
                         <div class="alert alert-primary">
-                            <p>Sorry! There is no photos in this album.
+                            <p>Sorry! There is no Media in this album.
                         </div>
                     </div>
 
@@ -71,19 +71,42 @@
                @foreach($photos as $photo)
 
                {{-- @dd($photos) --}}
+               @if ($photo->type==1)
 
                <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center pt-4">
 
-                    {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
+                {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
 
-                   <a href="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" class="fancylight" data-fancybox-group="light">
-                   <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
-                   </a>
+               <a href="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" class="fancylight" data-fancybox-group="light">
+               <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
+               </a>
 
-                     <p>{{ $photo->photo_description }}</p>
-                     <a href="{{ url('photos/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a>
+                 <p>{{ $photo->photo_description }}</p>
+                 <a href="{{ url('photos/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a>
 
-                </div>
+            </div>
+
+               @else
+               <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center pt-4">
+
+                @php
+                        $link = $photo->path;
+                        $video_id = explode("?v=", $link); // For videos like http://www.youtube.com/watch?v=...
+                        if (empty($video_id[1]))
+                            $video_id = explode("/v/", $link); // For videos like http://www.youtube.com/watch/v/..
+
+                        $video_id = explode("&", $video_id[1]); // Deleting any other params
+                        $video_id = $video_id[0];
+                @endphp
+
+
+                <iframe width="auto" height="aoto" src={{ 'https://www.youtube.com/embed/'.$video_id  }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+
+               @endif
+
+
 
 
 
