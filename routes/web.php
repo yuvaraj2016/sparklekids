@@ -17,6 +17,28 @@
 // Route::get('/', function () {
 //     return view('index');
 // });
+
+Route::get('/config-clear', function() {
+    $status = Artisan::call('config:clear');
+    return '<h1>Configurations cleared</h1>';
+});
+Route::get('/cache-clear', function() {
+    $status = Artisan::call('cache:clear');
+    return '<h1>Cache cleared</h1>';
+});
+Route::get('/config-cache', function() {
+    $status = Artisan::call('config:cache');
+    return '<h1>Configurations cache cleared</h1>';
+});
+
+Route::get('/storage-link', function() {
+    $status= shell_exec('cd .. && rm public/storage');
+    $status = Artisan::call('storage:link');
+    return $status;
+});
+
+
+
 Route::get('/','homecontroller@index');
 
 Route::get('/about_sparkle_kidss', function () {
