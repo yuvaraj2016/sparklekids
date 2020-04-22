@@ -90,6 +90,22 @@ text-shadow: 0 0 3px #FF0000;
 }
 
 
+.services-2
+{
+    height:53px;
+
+}
+
+.services-2 .text h4{
+
+    margin-top:6px!important;
+    /* font-size:3px!important; */
+}
+
+.services-2 .icon{
+
+    margin-top:-17px!important;
+}
 @media only screen and (max-width: 600px) {
 
 
@@ -137,7 +153,7 @@ text-shadow: 0 0 3px #FF0000;
     }
 
     .ssc .text h4{
-        margin-top:6px!important;
+        margin-top:11px!important;
     }
 
     .about-us-right
@@ -146,10 +162,15 @@ text-shadow: 0 0 3px #FF0000;
         margin-top:25px;
     }
 
+    .bannerinfo{
+
+        margin-top:-25px!important;
+    }
+
     .bannerinfo h1
     {
         font-size:20px!important;
-        margin-top:5px!important;
+        padding-top:8px!important;
 
     }
 
@@ -162,7 +183,7 @@ text-shadow: 0 0 3px #FF0000;
     .bannerinfo a
     {
         font-size:14px!important;
-        margin-top:-13px!important;
+        margin-top:3px!important;
         padding:10px!important;
 
     }
@@ -175,7 +196,7 @@ text-shadow: 0 0 3px #FF0000;
 
     .sa .card-body
     {
-        margin-left:-25px!important;
+        margin-left:-10px!important;
 
     }
 
@@ -361,12 +382,14 @@ text-shadow: 0 0 3px #FF0000;
         <div class="overlay"></div>
         <div class="container" style="padding-top:330px!important;">
           <div class="row no-gutters slider-text align-items-center justify-content-center" style="">
-            <div class="col-md-6 text-center ftco-animate bannerinfo" style="border:0px solid red;
+            <div class="col-md-6 text-center ftco-animate bannerinfo">
+            <div style="border:0px solid red;
             background-clip: border-box;
-            background-color:rgb(28, 25, 23,0.5);">
+            background-color:rgb(28, 25, 23,0.5);" class="pb-2">
                 <h1 class="mb-0 text-white">Play Is The New Learn</h1>
 
                 <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
+            </div>
                 <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-1" style="color:white;"><b>Admission Open</b></a></p>
             </div>
 
@@ -480,74 +503,81 @@ text-shadow: 0 0 3px #FF0000;
 
             <div class="col-md-6 ssc" style="border:0px solid #1EAAF1; padding:0px;">
                 <div class="card py-0"  style="width:100%;">
-                    <div class="card-header bg-primary p-2 text-center" style="color:white;font-weight:bold;font-size:20px">
+                    <div class="card-header p-2 text-center" style="color:white;font-weight:bold;font-size:20px; background-color:#000;">
                         7 Star Curriculum
                     </div>
                     <div class="card-body bg-white py-0">
 
-                        <div class="row p-2 ml-4 mt-3" style="">
+                        <div class="row p-2 ml-0 mt-3" style="">
                             {{-- <p class="text-center bg-white mtitle pt-3 ml-4">Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p> --}}
                                <div class="col-lg-6" style="padding-top:30px;">
-                                   <div class="services-2 d-flex hvr-float-shadow">
-                                       <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center "><img src="images/Connecting_with_nature_3.png" width="35px"></div>
+                                   <div class="services-2 d-flex hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Connecting With <br>Nature</h4>
+                                           <h4 class="text-white pl-4" style="font-size:13px!important;">Connecting With <br>Nature</h4>
                                        <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-3 pt-1 mr-1 d-flex justify-content-center align-items-center "><img src="images/Connecting_with_nature_3.png" width="35px"></div>
                                    </div>
                                </div>
                                <div class="col-lg-6"  style="padding-top:30px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow">
-                                       <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Foster Individual <br>Potential</h4>
+                                           <h4 style="font-size:13px!important;" class="text-white pl-4">Foster Individual <br>Potential</h4>
                                        <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-3 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/Individual_Potential.png" width="35px"></div>
                                    </div>
                                </div>
-                               <div class="col-lg-6"  style="padding-top:30px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow">
-                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
+                               <div class="col-lg-6"  style="padding-top:10px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Social &amp; Emotional <br>Development </h4>
+                                           <h4 style="font-size:13px!important;" class="text-white pl-4">Social &amp; Emotional <br>Development </h4>
                                            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-3 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/Emotional.png" width="35px"></div>
                                    </div>
                                </div>
-                               <div class="col-lg-6"  style="padding-top:30px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow">
-                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Awareness.png" width="35px"></div>
+                               <div class="col-lg-6"  style="padding-top:10px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Personal <br>Awareness</h4>
+                                           <h4 style="font-size:13px!important;" class="text-white pl-4">Personal <br>Awareness</h4>
                                            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-3 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/Awareness_2.png" width="35px"></div>
                                    </div>
                                </div>
-                               <div class="col-lg-6" style="padding-top:23px;">
-                                   <div class="services-2 d-flex hvr-float-shadow">
-                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
+                               <div class="col-lg-6" style="padding-top:10px;">
+                                   <div class="services-2 d-flex hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Cognitive <br>Development</h4>
+                                           <h4 style="font-size:13px!important;" class="text-white pl-4">Cognitive <br>Development</h4>
                                            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-3 pt-2 mr-1 d-flex justify-content-center align-items-center"><img src="images/Cognitive.png" width="35px"></div>
                                    </div>
                                </div>
-                               <div class="col-lg-6" style="padding-top:25px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow">
-                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Language.png" width="35px"></div>
+                               <div class="col-lg-6" style="padding-top:10px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Speech &amp; Language<br> Development</h4>
+                                           <h4 style="font-size:13px!important;" class="text-white pl-4">Speech &amp; Language<br> Development</h4>
                                            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-0 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/Language_2.png" width="35px"></div>
                                    </div>
                                </div>
-                               <div class="col-lg-6"  style="padding-top:22px; padding-bottom:11px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow">
-                                       <div class="icon mt-0 mr-3 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
+                               <div class="col-lg-6"  style="padding-top:10px; padding-bottom:11px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                        <div class="text">
-                                           <h4>Gross &amp; Fine <br>Motor Development</h4>
+                                           <h4 style="font-size:13px!important;" class="text-white pl-4">Gross &amp; Fine <br>Motor Development</h4>
                                            <!--<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                        </div>
+                                       <div class="icon mt-0 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/playtime.png" width="35px"></div>
                                    </div>
                                </div>
 
@@ -564,92 +594,100 @@ text-shadow: 0 0 3px #FF0000;
 
                   <div class="col-md-6 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:0px;">
                     <div class="card" style="width:100%;margin-left:0px;">
-                        <div class="card-header bg-primary text-center p-2" style="color:white;font-weight:bold;font-size:20px">
+                        <div class="card-header text-center p-2" style="color:white;font-weight:bold;font-size:20px;background-color:#000;">
                             Sparkle Advantages
                         </div>
                         <div class="card-body bg-white">
-                          <div class="row ml-5 mt-3">
+                          <div class="row ml-2 mt-3">
 
                             <div class="col-lg-6" style="padding-top:17px;">
-                              <div class="services-2 d-flex  hvr-float-shadow">
-                                  <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-book text-white mx-1" style="font-size:30px;"></i></div>
+                              <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                   <div class="text">
-                                      <h4>7 Star Curriculum</h4>
+                                      <h4 style="font-size:13px!important;" class="text-white pl-4 pt-2">7 Star Curriculum</h4>
                                   <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                   </div>
+                                  <div class="icon mt-2 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/stars.png" width="35px"></div>
                               </div>
                           </div>
 
                           <div class="col-lg-6" style="padding-top:17px;">
-                            <div class="services-2 d-flex  hvr-float-shadow">
-                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-chalkboard-teacher text-white mx-1" style="font-size:30px;"></i></div>
+                            <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                                 <div class="text">
-                                    <h4>Well Trained Teachers</h4>
+                                    <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Well Trained Teachers</h4>
                                 <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                                 </div>
+                                <div class="icon mt-2 mr-1 pt-1 d-flex justify-content-center align-items-center"><img src="images/TeacherIcon.png" width="35px"></div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6" style="padding-top:35px;">
-                          <div class="services-2 d-flex  hvr-float-shadow">
-                              <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-pray text-white mx-1" style="font-size:30px;"></i></div>
+                        <div class="col-lg-6" style="padding-top:10px;">
+                          <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                               <div class="text">
-                                  <h4>Story Yoga</h4>
+                                  <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Story Yoga</h4>
                               <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                               </div>
+                              <div class="icon mt-2 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/yoga-pose.png" width="35px"></div>
                           </div>
                       </div>
 
-                      <div class="col-lg-6" style="padding-top:35px;">
-                        <div class="services-2 d-flex  hvr-float-shadow">
-                            <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-users text-white mx-1" style="font-size:30px;"></i></div>
+                      <div class="col-lg-6" style="padding-top:10px;">
+                        <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                             <div class="text">
-                                <h4>Parent App</h4>
+                                <h4 style="font-size:13px!important;" class="text-white pl-4 pt-2">Parent App</h4>
                             <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                             </div>
+                            <div class="icon pt-1 mt-2 mr-1 d-flex justify-content-center align-items-center"><img src="images/parents.png" width="35px"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6" style="padding-top:30px;">
-                      <div class="services-2 d-flex  hvr-float-shadow">
-                          <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-swimmer text-white mx-1" style="font-size:30px;"></i></div>
+                    <div class="col-lg-6" style="padding-top:10px;">
+                      <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                           <div class="text">
-                              <h4>Splashpool & Sandplay</h4>
+                              <h4 style="font-size:13px!important; margin-left:1px;" class="text-white pl-3 pt-2">Splashpool & Sandplay</h4>
                           <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                           </div>
+                          <div class="icon pt-1 mt-2 mr-1 d-flex justify-content-center align-items-center"><img src="images/Sandplay.png" width="35px"></div>
                       </div>
                   </div>
 
-                  <div class="col-lg-6" style="padding-top:30px;">
-                    <div class="services-2 d-flex  hvr-float-shadow">
-                        <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-box text-white mx-1" style="font-size:30px;"></i></div>
+                  <div class="col-lg-6" style="padding-top:10px;">
+                    <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                         <div class="text">
-                            <h4>Smart Box</h4>
+                            <h4 style="font-size:13px!important;" class="text-white pl-4 pt-2">Smart Box</h4>
                         <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                         </div>
+                        <div class="icon pt-1 mt-2 mr-1 d-flex justify-content-center align-items-center"><img src="images/box.png" width="35px"></div>
                     </div>
                 </div>
 
 
-                <div class="col-lg-6" style="padding-top:30px;">
-                  <div class="services-2 d-flex  hvr-float-shadow">
-                      <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-tasks text-white mx-1" style="font-size:30px;"></i></div>
+                <div class="col-lg-6" style="padding-top:10px;">
+                  <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+
                       <div class="text">
-                          <h4>Daily Worksheet</h4>
+                          <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Daily Worksheet</h4>
                       <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                       </div>
+                      <div class="icon pt-1 mt-2 mr-1 d-flex justify-content-center align-items-center"><img src="images/task.png" width="35px"></div>
                   </div>
               </div>
 
 
 
-              <div class="col-lg-6" style="padding-top:30px;">
-                <div class="services-2 d-flex  hvr-float-shadow">
-                    <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><i class="fas fa-school text-white mx-1" style="font-size:30px;"></i></div>
+              <div class="col-lg-6" style="padding-top:10px;">
+                <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
                     <div class="text">
-                        <h4>Montessori</h4>
+                        <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Montessori</h4>
                     <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                     </div>
+                    <div class="icon pt-1 mt-2 mr-1 d-flex justify-content-center align-items-center"><img src="images/school.png" width="35px"></div>
+
                 </div>
             </div>
 
@@ -1441,7 +1479,7 @@ text-shadow: 0 0 3px #FF0000;
                     <p>{{ str_limit(strip_tags($testimonial->testimonial_desc), 120) }}</p>
                     @if (strlen($testimonial->testimonial_desc)>120)
                     <div class="d-flex align-items-center mt-4">
-                        <p class="mb-0 offset-2"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                        <p class="mb-0"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
                     </div>
                     @endif
 

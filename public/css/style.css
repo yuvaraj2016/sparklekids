@@ -8563,24 +8563,26 @@
           color: #fff; }
 
   .services-2 {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+
+}
     .services-2 .icon {
       line-height: 1;
       position: relative;
-      width: 80px;
+      width: 100px;
       height: 80px;
-      background: #1eaaf1;
-      -webkit-border-radius: 50%;
+      /* background: #1eaaf1; */
+      /* -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
-      border-radius: 50%; }
+      border-radius: 50%; */}
       .services-2 .icon span {
         font-size: 30px;
         color: #fff; }
     .services-2 .text {
       width: calc(100% - 80px); }
       .services-2 .text h3 {
-        font-size: 20px;
+        font-size: 15px!important;
         font-weight: 500; }
 
   .ftco-intro {

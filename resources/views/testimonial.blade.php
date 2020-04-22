@@ -45,7 +45,7 @@
                         <p>{{ str_limit(strip_tags($testimonial->testimonial_desc), 120) }}</p>
                         @if (strlen($testimonial->testimonial_desc)>120)
                         <div class="d-flex align-items-center mt-4">
-                            <p class="mb-0 offset-2"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                            <p class="mb-0"><a href="{{ url('testimonial/'.$testimonial->id)}}" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
                         </div>
                         @endif
 
