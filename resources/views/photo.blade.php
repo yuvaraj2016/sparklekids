@@ -10,6 +10,67 @@
 
 
 
+
+@php
+$id =request()->route('id');
+ $albumobj=new App\Http\Controllers\AlbumController;
+ $albumarr = $albumobj->getalbums();
+
+
+
+
+//  $finalarr = $albumarr[0];
+
+// var_dump($albumarr);exit;
+// echo $id;exit;
+
+
+$collection = collect($albumarr);
+
+// echo count($collection);
+
+$newcollect = $collection->pluck('id')->toArray();
+
+// echo count($newcollect);
+
+$current_array_val = array_search($id, $newcollect);
+
+$next_array_val = $current_array_val+1;
+
+$prev_array_val = $current_array_val-1;
+
+if($next_array_val==count($newcollect))
+{
+    // echo "yes";exit;
+    $next_item = $newcollect[0];
+}
+else {
+    $next_item = $newcollect[$next_array_val];
+}
+
+if($prev_array_val<0)
+{
+    $prev_item = $newcollect[0];
+}
+else {
+    $prev_item = $newcollect[$prev_array_val];
+}
+
+
+
+// $next_array_val = $newcollect[$next_array_val];
+
+
+// echo $next_item;
+
+// echo $prev_item;
+// exit;
+
+
+@endphp
+
+{{-- @dd($albumarr); --}}
+
         <div class="heading-section ftco-animate">
             {{-- @dd($albumdata); --}}
 
@@ -17,8 +78,20 @@
                 <h2 class="mb-4 text-center" >{{ $albumdata[0]->album_name}} - Photos</h2>
 
           </div>
+          {{-- <ul class="pagination">
+          <li class="previous"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary float-left">Previous</a></li>
+            <li class="next justify-content-end"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary justify-content-end">Next</a></li>
+          </ul> --}}
 
-            <!--<div class="portfolio-menu mt-2 mb-4">
+          <div class="row">
+            <div class="col-sm-1"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary float-left">Previous</a></div>
+            <div class="col-sm-10"></div>
+            <div class="col-sm-1"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary justify-content-end">Next</a></div>
+       </div>
+
+
+
+          <!--<div class="portfolio-menu mt-2 mb-4">
                <ul>
                   <li class="btn btn-outline-dark active" data-filter="*">All</li>
                   <li class="btn btn-outline-dark" data-filter=".gts">Childran</li>

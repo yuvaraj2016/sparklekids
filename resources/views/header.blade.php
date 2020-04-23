@@ -35,7 +35,7 @@ img .img {
 
 .nav-item a  {
 
-  color: black;
+  /* color: black; */
 
   font-size: 17px;
 
@@ -67,6 +67,13 @@ font-weight:bold!important;
     .nav-item{
 
         margin-left:-6px!important;
+
+    }
+
+
+    .nav-item a.nav-link
+    {
+        width: 200px!important;
     }
 
     .contactinfo{
@@ -120,7 +127,7 @@ font-weight:bold!important;
                 </li>-->
                 <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}" style="border-radius:1px solid;margin-right:4px;"><a href="#" class="nav-link "><span class="icon-home"></span> Home</a></li>
 	        	<li class="nav-item {{ (request()->is('testimonial')) ? 'active' : '' }}" style="margin-right:3px;"><a href="{{ url('/testimonial')}}" class="nav-link"><span class="icon-users"></span> Testimonial</a></li>
-                <li class="nav-item {{ (request()->is('gallery')) ? 'active' : '' }}"><a href="{{ url('/gallery')}}" class="nav-link"> <span class="icon-photo"></span> Gallery</a></li>
+                <li class="nav-item {{ (request()->is('gallery')) ? 'active' : '' }}" id="gallery"><a href="{{ url('/gallery')}}" class="nav-link"> <span class="icon-photo"></span> Gallery</a></li>
 
 	       <!-- 	<li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
 	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>

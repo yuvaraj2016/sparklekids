@@ -8117,7 +8117,12 @@
           color: #fff;
           background: #1eaaf1; } }
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-      color: #1eaaf1; }
+      color: #fff!important;
+      background-color:#1eaaf1;
+      border-radius: 73px;
+      font-weight:bold!important;
+
+    }
       @media (max-width: 991.98px) {
         .ftco-navbar-light .navbar-nav > .nav-item.active > a {
           color: rgb(66, 65, 65); } }
@@ -9782,10 +9787,10 @@
   {
 
     .ftco-footer-social span {
-        margin-left:-24px!important;
+        margin-left:-10px!important;
     }
     .ftco-footer-social
     {
-        margin-left:78px!important;
+        margin-left:49px!important;
     }
   }

@@ -114,4 +114,75 @@ public function paginate($items, $perPage = 8, $page = null, $options = [])
 
     }
 
+    public function getalbums()
+    {
+
+        try
+        {
+
+        $client = new Client();
+        $response = $client->request('GET', 'http://restschool.hridham.com/api/getAllAlbums',
+        []);
+
+        //  dd($response);
+        //  return false;
+
+        if($response->getStatusCode() === 200)
+        {
+            //  echo $response->getBody();
+
+            $albumdata = json_decode($response->getBody());
+            // $data = $this->paginateprevnext($albumdata->message);
+
+            //  echo Session::get('access_token');
+            //  return false;
+
+            return $albumdata->message;
+
+        }
+
+        }
+        catch(BadResponseException $ex)
+        {
+            $data = json_decode($ex->getResponse()->getBody()->getContents(), true);
+            $errors = [];
+
+            // session()->forget('access_token');
+
+            foreach($data as $k=>$v)
+                $errors[$k]=$v;
+            return redirect('/gallery')->with('error',"Error! There is an error in album images loading");
+            //return view('auth.register')->with(['error'=>$errors]);
+        }
+        if($response->getStatusCode() == 201)
+        {
+            $albums = json_decode($response->getBody(),true);
+
+            //  echo Session::get('access_token');
+            //  return false;
+            return $albums;
+            // return view('gallery')->with('albums',compact('albums'));
+            // return redirect('/gallery')->with('success','Successfully Registered');
+        }
+        else
+        {
+            return 'Internal Server Error!<br>Check api/users/create<br>'.$response;
+        }
+
+        // $albums = Album::all();
+        // return view('album',compact('albums'));
+
+    }
+
+
+    public function paginateprevnext($items, $perPage = 1, $page = null, $options = [])
+{
+    $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+    $items = $items instanceof Collection ? $items : Collection::make($items);
+    $paginatedItems =new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    $paginatedItems->setPath(url()->current());
+    return $paginatedItems;
+}
+
+
 }
