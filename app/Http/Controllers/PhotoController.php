@@ -171,7 +171,7 @@ class PhotoController extends Controller
             // return file_exists(storage_path()."/app/public/photos/".$path);
             if(!file_exists(storage_path()."/app/public/photos/".$path))
             {
-            Image::make($imgpath)->fit('250','250')
+            Image::make($imgpath)->fit('350','350')
             ->save(storage_path()."/app/public/photos/".$path, 80);
             }
 

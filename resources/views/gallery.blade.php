@@ -21,12 +21,12 @@
 
                {{-- {{$album->cover_picture}} --}}
 
-                <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="col-md-6 col-lg-4 ftco-animate">
                     {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
 
                     <div class="blog-entry">
                       <a href="{{ url('albums/'.$album->id) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
-                        <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:7px;">
+                        <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:4px;height:auto;" class="img img-fluid">
                                         {{-- <div class="meta-date text-center p-2">
 
                                             //   $date1= explode('-',$album->album_date);

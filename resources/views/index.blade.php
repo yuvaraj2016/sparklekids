@@ -90,6 +90,7 @@ text-shadow: 0 0 3px #FF0000;
 }
 
 
+
 .services-2
 {
     height:53px;
@@ -100,6 +101,7 @@ text-shadow: 0 0 3px #FF0000;
 
     margin-top:6px!important;
     /* font-size:3px!important; */
+    font-weight:bold;
 }
 
 .services-2 .icon{
@@ -489,7 +491,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
-<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{ url('images/about_us_up.jpg') }}'); margin-top:0px;" data-stellar-background-ratio="0.5">
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{ url('images/about_us_up.jpg') }}'); margin-top:0px;"">
 
   <div class="container" style="">
 
@@ -530,8 +532,8 @@ text-shadow: 0 0 3px #FF0000;
 
 <section class="ftco-section ftco-no-pt ftc-no-pb">
 
-    <div class="container-fluid pt-0">
-        <div class="row bg-white pt-0">
+    <div class="container-fluid">
+        <div class="row bg-white pt-5">
 
 
             <div class="col-md-6 ssc" style="border:0px solid #1EAAF1; padding:0px;">
@@ -1313,12 +1315,12 @@ text-shadow: 0 0 3px #FF0000;
 
            {{-- {{$album->cover_picture}} --}}
 
-            <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="col-md-6 col-lg-4 ftco-animate">
                 {{ app()->call('App\Http\Controllers\AlbumController@imageresize',['src'=>$album->cover_picture])}}
 
                 <div class="blog-entry gallerysec">
                   <a href="{{ url('albums/'.$album->id) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
-                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:7px;">
+                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:-7px; width:100%;height:auto;">
                                     {{-- <div class="meta-date text-center p-2">
 
                                         //   $date1= explode('-',$album->album_date);

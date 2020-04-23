@@ -78,11 +78,11 @@
                 {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
 
                <a href="{{ url('photos/'.$photo->id) }}" class="fancylight" data-fancybox-group="light">
-               <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
+               <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}">
                </a>
 
                  <p>{{ $photo->photo_description }}</p>
-                 <a href="{{ url('photos/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a>
+                 {{-- <a href="{{ url('photos/'.$photo->id) }}" class="album bg-primary text-white p-2">Know More</a> --}}
 
             </div>
 

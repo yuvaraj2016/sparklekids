@@ -89,7 +89,7 @@ class homecontroller extends Controller
     {
 
         $imgpath = 'http://restschool.hridham.com/storage/cover_pictures/'.$path;
-        Image::make($imgpath)->fit('250','250')
+        Image::make($imgpath)->fit('350','350')
             // ->fit('250','250', function ($constraint) {
             //     $constraint->upsize();
             //     $constraint->aspectRatio();
@@ -170,7 +170,7 @@ class homecontroller extends Controller
     }
 
 
-    public function paginate($items, $perPage = 8, $page = null, $options = [])
+    public function paginate($items, $perPage = 3, $page = null, $options = [])
 {
     $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
     $items = $items instanceof Collection ? $items : Collection::make($items);
@@ -179,7 +179,7 @@ class homecontroller extends Controller
     return $paginatedItems;
 }
 
-public function paginatetestimonial($items, $perPage = 6, $page = null, $options = [])
+public function paginatetestimonial($items, $perPage = 3, $page = null, $options = [])
 {
     $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
     $items = $items instanceof Collection ? $items : Collection::make($items);

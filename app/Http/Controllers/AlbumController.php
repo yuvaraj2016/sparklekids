@@ -100,7 +100,7 @@ public function paginate($items, $perPage = 8, $page = null, $options = [])
         if(!file_exists(storage_path()."/app/public/cover_pictures/".$path))
         {
 
-        Image::make($imgpath)->fit('250','250')
+        Image::make($imgpath)->fit('350','350')
             // ->fit('250','250', function ($constraint) {
             //     $constraint->upsize();
             //     $constraint->aspectRatio();
