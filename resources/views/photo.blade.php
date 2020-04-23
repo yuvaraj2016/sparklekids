@@ -77,7 +77,7 @@
 
                 {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
 
-               <a href="http://restschool.hridham.com/storage/photos/{{ $photo->photo }}" class="fancylight" data-fancybox-group="light">
+               <a href="{{ url('photos/'.$photo->id) }}" class="fancylight" data-fancybox-group="light">
                <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" height="100px">
                </a>
 

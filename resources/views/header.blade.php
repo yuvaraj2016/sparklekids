@@ -59,16 +59,29 @@ font-weight:bold!important;
 {
     .nav-item a,span
     {
-        padding-left:50px!important;
+        padding-left:20px!important;
 
 
+    }
+
+    .nav-item{
+
+        margin-left:-6px!important;
     }
 
     .contactinfo{
-        margin-left:-45px!important;
+        margin-left:-10px!important;
         padding-left:0px!important;
 
     }
+
+    .navbar button
+    {
+        /* float:right!important; */
+        margin-left:-20px!important;
+        /* border:2px solid red; */
+    }
+
 }
 
     </style>
@@ -85,8 +98,8 @@ font-weight:bold!important;
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light " id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/logo.png" class="img img-fluid d-none d-md-block d-lg-block d-xl-block" width="250px"></a>
-				<h4 class="d-block d-md-none d-lg-none d-xl-none bg-primary p-2 text-white">Sparkle Kidss</h4><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand col-md-4 " href="{{ url('/')}}"><img src="images/logo.png" class="img img-fluid d-none d-md-block d-lg-block d-xl-block" width="250px">
+				<img class="d-block d-md-none d-lg-none d-xl-none p-2 text-white img-fluid ml-2 mt-0" src="images/SK_Logo_Text.png" style="border:0px solid #fff!important; height:110px!important;width:310px!important;"/></a><button class="navbar-toggler navbar-toggler-right ml-0" style="" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse col-md-4" id="ftco-nav">

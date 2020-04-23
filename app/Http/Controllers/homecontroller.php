@@ -141,7 +141,7 @@ class homecontroller extends Controller
                 //  echo $response->getBody();
 
                 $testimonial_data = json_decode($testresponse->getBody());
-                $datatest = $this->paginate($testimonial_data->data);
+                $datatest = $this->paginatetestimonial($testimonial_data->data);
 
                 //  echo Session::get('access_token');
                 //  return false;
@@ -171,6 +171,15 @@ class homecontroller extends Controller
 
 
     public function paginate($items, $perPage = 8, $page = null, $options = [])
+{
+    $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+    $items = $items instanceof Collection ? $items : Collection::make($items);
+    $paginatedItems =new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    $paginatedItems->setPath(url('/'));
+    return $paginatedItems;
+}
+
+public function paginatetestimonial($items, $perPage = 6, $page = null, $options = [])
 {
     $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
     $items = $items instanceof Collection ? $items : Collection::make($items);

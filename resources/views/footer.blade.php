@@ -6,7 +6,7 @@
               <h2 class="ftco-heading-2">Address</h2>
               <div class="block-23 mb-2">
                 <ul>
-                  <li><span class="icon icon-map-marker"></span><span class="text">NO 7. Mcn Nagar, 1 St Street, Thoraipakkam, chennai-97</span></li>
+                  <li><span class="icon icon-map-marker"></span><span class="text text-white">NO 7. Mcn Nagar, 1 St Street, Thoraipakkam, chennai-97</span></li>
                   <li style="margin-top:-7px!important;"><a href="tel:+9790751611"><span class="icon icon-phone"></span><span class="text">9790751611</span></a></li>
                   <li style="margin-top:-21px!important;"><a href="mailto:sparklekidsschn@gmail.com"><span class="icon icon-envelope"></span><span class="text">sparklekidsschn@gmail.com</span></a></li>
                 </ul>
@@ -76,7 +76,7 @@
         <div class="col-md-12 text-center">
 
           <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <a href="https://hridhamtech.com/" target="_blank">HridhamTech</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Powered By <a href="https://hridhamtech.com/" target="_blank" class="text-white">Hridham Technologies</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
         </div>
       </div>

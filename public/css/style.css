@@ -9772,6 +9772,11 @@
 
   }
 
+ .ftco-footer-widget li a
+  {
+    color:white!important;
+
+  }
 
   @media only screen and (max-width:480px)
   {

@@ -106,6 +106,8 @@ text-shadow: 0 0 3px #FF0000;
 
     margin-top:-17px!important;
 }
+
+
 @media only screen and (max-width: 600px) {
 
 
@@ -170,7 +172,7 @@ text-shadow: 0 0 3px #FF0000;
     .bannerinfo h1
     {
         font-size:20px!important;
-        padding-top:8px!important;
+        padding-top:16px!important;
 
     }
 
@@ -183,7 +185,7 @@ text-shadow: 0 0 3px #FF0000;
     .bannerinfo a
     {
         font-size:14px!important;
-        margin-top:3px!important;
+        margin-top:5px!important;
         padding:10px!important;
 
     }
@@ -214,6 +216,37 @@ text-shadow: 0 0 3px #FF0000;
     {
         margin-top:15px!important;
         padding-bottom:0px!important;
+    }
+
+    .ssc .col-lg-6{
+
+        margin-top:-20px!important;
+    }
+
+    .ssc .foster{
+
+        margin-top:-40px!important;
+    }
+
+    .ssc .text
+    {
+        margin-top:-4px!important;
+
+    }
+
+    .sa .col-lg-6
+    {
+        margin-top:-20px!important;
+
+    }
+    .media .icon
+    {
+        margin-top:-50px!important;
+    }
+
+    .media .icon span
+    {
+        margin-left:-17px!important;
     }
 }
 
@@ -378,7 +411,7 @@ text-shadow: 0 0 3px #FF0000;
       </div>
     </section> --}}
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ url('images/banner.png')}}'); height:600px;">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ url('images/banner_new.png')}}'); height:600px;">
         <div class="overlay"></div>
         <div class="container" style="padding-top:330px!important;">
           <div class="row no-gutters slider-text align-items-center justify-content-center" style="">
@@ -390,7 +423,7 @@ text-shadow: 0 0 3px #FF0000;
 
                 <p style="color:white">Playgroup | Preschool | KG | Day Care Upto 8pm  |  Activity Center</p>
             </div>
-                <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-1" style="color:white;"><b>Admission Open</b></a></p>
+                <p><a href="#contact_form" class="btn btn-info px-4 py-3 mt-3" style="color:white;"><b>Admission Open</b></a></p>
             </div>
 
           </div>
@@ -456,7 +489,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
 
-<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{ url('images/about_us_new.jpg') }}'); margin-top:0px;" data-stellar-background-ratio="0.5">
+<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-image: url('{{ url('images/about_us_up.jpg') }}'); margin-top:0px;" data-stellar-background-ratio="0.5">
 
   <div class="container" style="">
 
@@ -503,15 +536,15 @@ text-shadow: 0 0 3px #FF0000;
 
             <div class="col-md-6 ssc" style="border:0px solid #1EAAF1; padding:0px;">
                 <div class="card py-0"  style="width:100%;">
-                    <div class="card-header p-2 text-center" style="color:white;font-weight:bold;font-size:20px; background-color:#000;">
+                    <div class="card-header p-2 text-center bg-primary" style="color:white;font-weight:bold;font-size:20px;">
                         7 Star Curriculum
                     </div>
                     <div class="card-body bg-white py-0">
 
                         <div class="row p-2 ml-0 mt-3" style="">
                             {{-- <p class="text-center bg-white mtitle pt-3 ml-4">Sparkle kidss ensures our children’s holistic development and readiness for their next level of learning through the 7 star curriculum.</p> --}}
-                               <div class="col-lg-6" style="padding-top:30px;">
-                                   <div class="services-2 d-flex hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                               <div class="col-lg-6 con" style="padding-top:30px;">
+                                   <div class="services-2 d-flex hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 class="text-white pl-4" style="font-size:13px!important;">Connecting With <br>Nature</h4>
@@ -520,8 +553,8 @@ text-shadow: 0 0 3px #FF0000;
                                        <div class="icon mt-3 pt-1 mr-1 d-flex justify-content-center align-items-center "><img src="images/Connecting_with_nature_3.png" width="35px"></div>
                                    </div>
                                </div>
-                               <div class="col-lg-6"  style="padding-top:30px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                               <div class="col-lg-6 foster"  style="padding-top:30px;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 style="font-size:13px!important;" class="text-white pl-4">Foster Individual <br>Potential</h4>
@@ -531,7 +564,7 @@ text-shadow: 0 0 3px #FF0000;
                                    </div>
                                </div>
                                <div class="col-lg-6"  style="padding-top:10px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 style="font-size:13px!important;" class="text-white pl-4">Social &amp; Emotional <br>Development </h4>
@@ -541,7 +574,7 @@ text-shadow: 0 0 3px #FF0000;
                                    </div>
                                </div>
                                <div class="col-lg-6"  style="padding-top:10px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 style="font-size:13px!important;" class="text-white pl-4">Personal <br>Awareness</h4>
@@ -551,7 +584,7 @@ text-shadow: 0 0 3px #FF0000;
                                    </div>
                                </div>
                                <div class="col-lg-6" style="padding-top:10px;">
-                                   <div class="services-2 d-flex hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                                   <div class="services-2 d-flex hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 style="font-size:13px!important;" class="text-white pl-4">Cognitive <br>Development</h4>
@@ -561,7 +594,7 @@ text-shadow: 0 0 3px #FF0000;
                                    </div>
                                </div>
                                <div class="col-lg-6" style="padding-top:10px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 style="font-size:13px!important;" class="text-white pl-4">Speech &amp; Language<br> Development</h4>
@@ -571,7 +604,7 @@ text-shadow: 0 0 3px #FF0000;
                                    </div>
                                </div>
                                <div class="col-lg-6"  style="padding-top:10px; padding-bottom:11px;">
-                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                                   <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                        <div class="text">
                                            <h4 style="font-size:13px!important;" class="text-white pl-4">Gross &amp; Fine <br>Motor Development</h4>
@@ -594,14 +627,14 @@ text-shadow: 0 0 3px #FF0000;
 
                   <div class="col-md-6 sa" style="border:0px solid #1EAAF1; padding:0px; margin-left:0px;">
                     <div class="card" style="width:100%;margin-left:0px;">
-                        <div class="card-header text-center p-2" style="color:white;font-weight:bold;font-size:20px;background-color:#000;">
+                        <div class="card-header text-center p-2 bg-primary" style="color:white;font-weight:bold;font-size:20px;">
                             Sparkle Advantages
                         </div>
                         <div class="card-body bg-white">
                           <div class="row ml-2 mt-3">
 
                             <div class="col-lg-6" style="padding-top:17px;">
-                              <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                              <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                   <div class="text">
                                       <h4 style="font-size:13px!important;" class="text-white pl-4 pt-2">7 Star Curriculum</h4>
@@ -612,7 +645,7 @@ text-shadow: 0 0 3px #FF0000;
                           </div>
 
                           <div class="col-lg-6" style="padding-top:17px;">
-                            <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                            <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                                 <div class="text">
                                     <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Well Trained Teachers</h4>
@@ -623,7 +656,7 @@ text-shadow: 0 0 3px #FF0000;
                         </div>
 
                         <div class="col-lg-6" style="padding-top:10px;">
-                          <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                          <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                               <div class="text">
                                   <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Story Yoga</h4>
@@ -634,7 +667,7 @@ text-shadow: 0 0 3px #FF0000;
                       </div>
 
                       <div class="col-lg-6" style="padding-top:10px;">
-                        <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                        <div class="services-2 d-flex  hvr-float-shadow" style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                             <div class="text">
                                 <h4 style="font-size:13px!important;" class="text-white pl-4 pt-2">Parent App</h4>
@@ -645,7 +678,7 @@ text-shadow: 0 0 3px #FF0000;
                     </div>
 
                     <div class="col-lg-6" style="padding-top:10px;">
-                      <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                      <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                           <div class="text">
                               <h4 style="font-size:13px!important; margin-left:1px;" class="text-white pl-3 pt-2">Splashpool & Sandplay</h4>
@@ -656,7 +689,7 @@ text-shadow: 0 0 3px #FF0000;
                   </div>
 
                   <div class="col-lg-6" style="padding-top:10px;">
-                    <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                    <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                         <div class="text">
                             <h4 style="font-size:13px!important;" class="text-white pl-4 pt-2">Smart Box</h4>
@@ -668,7 +701,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
                 <div class="col-lg-6" style="padding-top:10px;">
-                  <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                  <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
 
                       <div class="text">
                           <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Daily Worksheet</h4>
@@ -681,7 +714,7 @@ text-shadow: 0 0 3px #FF0000;
 
 
               <div class="col-lg-6" style="padding-top:10px;">
-                <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#000;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
+                <div class="services-2 d-flex  hvr-float-shadow"  style="background-color:#1eaaf1;-webkit-border-radius: 30px;-moz-border-radius: 30px;-ms-border-radius: 30px;border-radius: 30px; width:270px!important;">
                     <div class="text">
                         <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Montessori</h4>
                     <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
@@ -1312,13 +1345,24 @@ text-shadow: 0 0 3px #FF0000;
 
         </div>
 
+
         <div class="row justify-content-center">
             <div class="pagination">
-                <a class="btn btn-primary" href="{{ url('gallery') }}">Go To Gallery</a>
+               <a class="btn btn-primary" href="{{ url('gallery') }}">Go To Gallery</a>
              </div>
 
         </div>
+
+
+
      </div>
+
+     <div class="container-fluid m-0 p-0 mt-4">
+
+        <div class="p-2 bg-white m-0 p-0"></div>
+
+    </div>
+
 
 </section>
 
