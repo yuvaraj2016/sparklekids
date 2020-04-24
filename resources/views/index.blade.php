@@ -1332,7 +1332,7 @@ text-shadow: 0 0 3px #FF0000;
 
                 <div class="blog-entry gallerysec">
                   <a href="{{ url('albums/'.$album->id) }}" class="block-20 p-2 d-flex align-items-end" style="background-color:white;">
-                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:-7px; width:100%;height:auto;">
+                    <img src="{{ url('storage/cover_pictures/'.$album->cover_picture)}}" style="margin-left:3px; width:100%;height:auto;">
                                     {{-- <div class="meta-date text-center p-2">
 
                                         //   $date1= explode('-',$album->album_date);
