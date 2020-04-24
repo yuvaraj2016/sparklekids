@@ -250,6 +250,12 @@ text-shadow: 0 0 3px #FF0000;
     {
         margin-left:-17px!important;
     }
+
+    .meta-date span
+    {
+        padding-left:0px!important;
+
+    }
 }
 
 
@@ -1381,123 +1387,6 @@ text-shadow: 0 0 3px #FF0000;
 </section>
 
 
-
-
-
-	<!--	<section class="ftco-gallery">
-    	<div class="container-wrap">
-            <div class=" heading-section ftco-animate">
-                <h2 class="mb-4 text-center" >Gallery</h2>
-
-              </div>
-    		<div class="row no-gutters">
-					<div class="col-md-3 ftco-animate">
-                    <a href="{{ url('gallery')}}" class="gallery   d-flex align-items-center" style="background-image: url(images/course-1.jpg);">
-
-                            <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                           	<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="{{ url('gallery')}}" class="gallery  d-flex align-items-center" style="background-image: url(images/image_2.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="{{ url('gallery')}}" class="gallery  d-flex align-items-center" style="background-image: url(images/image_3.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-					<div class="col-md-3 ftco-animate">
-						<a href="{{ url('gallery')}}" class="gallery  d-flex align-items-center" style="background-image: url(images/image_4.jpg);">
-							<div class="icon mb-4 d-flex align-items-center justify-content-center">
-    						<span class="icon-instagram"></span>
-    					</div>
-						</a>
-					</div>
-        </div>
-    	</div>
-    </section>-->
-    <!--<section class="ftco-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-      <div class="col-md-8 text-center heading-section ftco-animate">
-        <h2 class="mb-4" style="color:#1eaaf1;"<span>Recent</span> Testimonials</h2>
-        <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-      </div>
-    </div>
-            <div class="row">
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <div class="blog-entry">
-          <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
-                            <div class="meta-date text-center p-2">
-              <span class="day">03</span>
-              <span class="mos">April</span>
-              <span class="yr">2020</span>
-            </div>
-          </a>
-          <div class="text bg-white p-4">
-            <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <div class="d-flex align-items-center mt-4">
-
-
-            <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-            <p class="mb-0 offset-2"><a href="{{ url('test_children')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
-        </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <div class="blog-entry">
-          <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/teacher-2.jpg');">
-                            <div class="meta-date text-center p-2">
-                                <span class="day">03</span>
-                                <span class="mos">April</span>
-                                <span class="yr">2020</span>
-            </div>
-          </a>
-          <div class="text bg-white p-4">
-            <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <div class="d-flex align-items-center mt-4">
-
-
-                <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                <p class="mb-0 offset-2"><a href="{{('test_teacher')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <div class="blog-entry">
-          <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_4.jpg');">
-                            <div class="meta-date text-center p-2">
-              <span class="day">03</span>
-              <span class="mos">April</span>
-              <span class="yr">2020</span>
-            </div>
-          </a>
-          <div class="text bg-white p-4">
-            <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <div class="d-flex align-items-center mt-4">
-
-
-                <p class="mb-0"><a href="{{ url('testimonial')}}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                <p class="mb-0  offset-2"><a href="{{ url('test_sports')}}" class="btn btn-primary">Know More <span class="ion-ios-arrow-round-forward"></span></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        </div>
-    </section>-->
 <section class="ftco-section ftco-no-pb bg-light">
     <div class="container">
         <div class="row justify-content-center mb-1 pb-2">
@@ -1525,15 +1414,16 @@ text-shadow: 0 0 3px #FF0000;
                 <div class="blog-entry">
                     <a href="{{ url('testimonial/'.$testimonial->id) }}"
                         class="block-20 d-flex align-items-end"
-                        style="background-image: url('http://restschool.hridham.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
+                        style="background-image: url('http://rest.sparklekidss.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
                         <div class="meta-date text-center p-2">
                             <?php
                                       $date= explode('-',$testimonial->testimonial_date);
                                      ?>
-                            <span class="day">{{ $date[0] }}</span>
-                            <span
-                                class="mos">{{ date("F", mktime(0, 0, 0, $date[1], 1)) }}</span>
                             <span class="yr">{{ $date[2] }}</span>
+                            <span class="mos">{{ date("F", mktime(0, 0, 0, $date[1], 1)) }}</span>
+
+                            <span class="day">{{ $date[0] }}</span>
+
                         </div>
                     </a>
                     <div class="text bg-white p-4">

@@ -142,8 +142,8 @@ else {
 
                @if(count($photos)==0)
 
-                <div class="row items gts justify-content-center align-items-center">
-                    <div class="col-lg-12 text-center">
+                <div class="row items gts justify-content-center align-items-center" style="padding-bottom:140px!important;">
+                    <div class="col-lg-12 text-center" style="padding-top:80px;">
                         <div class="alert alert-primary">
                             <p>Sorry! There is no Media in this album.
                         </div>
