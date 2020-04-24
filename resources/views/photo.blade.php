@@ -6,9 +6,9 @@
 
 
 
+
+
     <section>
-
-
 
 
 @php
@@ -73,21 +73,32 @@ else {
 
         <div class="heading-section ftco-animate">
             {{-- @dd($albumdata); --}}
+            <div class="row mt-4">
+                <div class="col-2 pt-3">
+                  <span class="float-right"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary ml-3">Previous</a></span>
+                </div>
+                <div class="col-8 text-center">
+                  {{-- Logo --}} <h2 class="mb-1 text-center" >{{ $albumdata[0]->album_name}} - Photos</h2>
+                </div>
+                <div class="col-2 pt-3">
+                  <span class="float-left"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary mr-3">Next</a></span>
+                </div>
+              </div>
 
 
-                <h2 class="mb-4 text-center" >{{ $albumdata[0]->album_name}} - Photos</h2>
+
+
 
           </div>
           {{-- <ul class="pagination">
           <li class="previous"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary float-left">Previous</a></li>
             <li class="next justify-content-end"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary justify-content-end">Next</a></li>
           </ul> --}}
-
-          <div class="row">
+          {{-- <div class="row">
             <div class="col-sm-1"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary float-left">Previous</a></div>
-            <div class="col-sm-10"></div>
-            <div class="col-sm-1"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary justify-content-end">Next</a></div>
-       </div>
+            <div class="col-sm-10 d-sm-none"></div>
+            <div class="col-sm-1" style="float:right;"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary justify-content-end">Next</a></div>
+       </div> --}}
 
 
 

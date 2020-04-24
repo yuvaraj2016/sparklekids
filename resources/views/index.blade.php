@@ -439,11 +439,16 @@ text-shadow: 0 0 3px #FF0000;
           <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-primary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-teacher"></span>
+                    {{-- <span class="flaticon-teacher"></span> --}}
+                    <img src="images/box.png">
+
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Sparkle Smart Box</h3>
-               <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+               {{-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> --}}
+               <p>A compact package that contains interesting content for the child to joyfully learn through play
+
+                at Sparkle kidss preschool</p>
               <!--  <p>playgroup</p>-->
               </div>
             </div>
@@ -451,11 +456,13 @@ text-shadow: 0 0 3px #FF0000;
           <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-tertiary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-reading"></span>
+                    {{-- <span class="flaticon-reading"></span> --}}
+                    <img src="images/parents.png">
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Sparkle App</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Parent App</h3>
+                {{-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> --}}
+                <p>Parents can keep track of daily activities of their child at the Sparkle kidss preschool</p>
                <!-- <p>preschool</p>-->
               </div>
             </div>
@@ -463,12 +470,15 @@ text-shadow: 0 0 3px #FF0000;
           <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-fifth">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-books"></span>
+                    {{-- <span class="flaticon-books"></span> --}}
+                    <img src="images/task.png">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Daily Worksheets</h3>
-             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+             {{-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> --}}
+                <p>A child who has enrolled in the Sparkle kidss preschool program will enjoy a new, interesting
 
+                    activity worksheet everyday</p>
                 <!--<p>Kg</p>-->
               </div>
             </div>
@@ -476,11 +486,13 @@ text-shadow: 0 0 3px #FF0000;
           <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-quarternary">
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-diploma"></span>
+                    {{-- <span class="flaticon-diploma"></span> --}}
+                    <img src="images/school.png">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Montessori</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                {{-- <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p> --}}
+                <p>Montessori students are able to think critically, work collaboratively, and act boldly—a skill set for the 21st century.</p>
               <!-- <p>daycare upto 8pm </p>-->
               </div>
             </div>
@@ -664,7 +676,7 @@ text-shadow: 0 0 3px #FF0000;
                                   <h4 style="font-size:13px!important;" class="text-white pt-2 pl-4">Story Yoga</h4>
                               <!--	<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>-->
                               </div>
-                              <div class="icon mt-2 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/yoga-pose.png" width="35px"></div>
+                              <div class="icon mt-2 pt-1 mr-1 d-flex justify-content-center align-items-center"><img src="images/boy-kid-yoga-boy-kid-yoga.png" width="35px"></div>
                           </div>
                       </div>
 
