@@ -13,7 +13,17 @@
         </div>
       </div>
     </section>-->
+<style>
+@media only screen and (max-width:480px)
+{
 
+    .meta-date span
+    {
+        padding-left:0px!important;
+
+    }
+}
+</style>
 <section class="ftco-section ftco-no-pb">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
@@ -33,8 +43,8 @@
                         <div class="blog-entry">
                             <a href="{{ url('testimonial/'.$testimonial->id) }}"
                                 class="block-20 d-flex align-items-end"
-                                style="background-image: url('http://restschool.hridham.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
-                                <div class="meta-date text-center p-2">
+                                style="background-image: url('http://rest.sparklekidss.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
+                                <div class="meta-date text-left p-2">
                                     <?php
                                               $date= explode('-',$testimonial->testimonial_date);
                                              ?>

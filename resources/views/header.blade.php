@@ -89,6 +89,15 @@ font-weight:bold!important;
         /* border:2px solid red; */
     }
 
+    .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+      color: #1eaaf1!important;
+      background-color:white!important;
+      /* border-radius: 73px; */
+      font-weight:bold!important;
+
+    }
+
+
 }
 
     </style>
@@ -145,7 +154,7 @@ font-weight:bold!important;
 
           </div>-->
 
-          <ul class="col-md-4 offset-1 contactinfo">
+          <ul class="col-md-4 offset-1 contactinfo pt-3">
             <li class="ss"><a href="tel:+9790751611"><span class="icon-phone2 "></span> 9790751611</a></li>
             <li class="ss"><a href="mailto:sparklekidsschn@gmail.com"> <span class="icon-envelope"></span> sparklekidsschn@gmail.com</a></li>
 

@@ -4,6 +4,30 @@
 
     @section('content')
 
+    <style>
+
+        @media only screen and (max-width:480px)
+        {
+
+            .previous
+            {
+                margin-left:-12px!important;
+                padding-left:0px!important;
+                float:left!important;
+                margin-top:8px!important;
+                /* display:none; */
+
+            }
+
+            .next
+            {
+                margin-top:8px!important;
+
+
+            }
+        }
+
+    </style>
 
 
 
@@ -73,15 +97,15 @@ else {
 
         <div class="heading-section ftco-animate">
             {{-- @dd($albumdata); --}}
-            <div class="row mt-4">
-                <div class="col-2 pt-3">
-                  <span class="float-right"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary ml-3">Previous</a></span>
+            <div class="row mt-3">
+                <div class="col-lg-2 col-3 pt-3 pr-0">
+                  <span class="float-right previous"><a href="{{ url('albums/'.$prev_item)}}" class="btn btn-primary ml-3">Previous</a></span>
                 </div>
-                <div class="col-8 text-center">
+                <div class="col-lg-8 col-6 text-center">
                   {{-- Logo --}} <h2 class="mb-1 text-center" >{{ $albumdata[0]->album_name}} - Photos</h2>
                 </div>
-                <div class="col-2 pt-3">
-                  <span class="float-left"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary mr-3">Next</a></span>
+                <div class="col-lg-2 col-3 pt-3 pl-0">
+                  <span class="float-left next"><a href="{{ url('albums/'.$next_item)}}" class="btn btn-primary mr-0">Next</a></span>
                 </div>
               </div>
 
@@ -157,12 +181,12 @@ else {
                {{-- @dd($photos) --}}
                @if ($photo->type==1)
 
-               <div class="item gts col-lg-3 col-md-4 col-6 col-sm text-center pt-4">
+               <div class="item gts col-lg-3 col-md-4 col-12 col-sm text-center pt-4">
 
                 {{ app()->call('App\Http\Controllers\PhotoController@imageresize',['src'=>$photo->photo])}}
 
-               <a href="{{ url('photos/'.$photo->id) }}" class="fancylight" data-fancybox-group="light">
-               <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}">
+               <a href="{{ url('photos/'.$photo->id.'/'.$id) }}" class="fancylight" data-fancybox-group="light">
+               <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photo->photo) }}" alt="{{ $photo->photo }}" style="width:auto;height:auto;">
                </a>
 
                  <p>{{ $photo->photo_description }}</p>

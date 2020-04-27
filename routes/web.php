@@ -73,7 +73,7 @@ Route::get('/gallery','AlbumController@index');
 
 Route::get('/albums/{id}','PhotoController@index');
 
-Route::get('/photos/{id}','PhotoController@show');
+Route::get('/photos/{id}/{albumid}','PhotoController@show');
 
 
 // Route::get('imager/{src?}', 'PhotoController@imageresize');

@@ -4,17 +4,137 @@
 
     @section('content')
 
+    <style>
+
+        @media only screen and (max-width:480px)
+        {
+
+            .previous
+            {
+                margin-left:-12px!important;
+                padding-left:0px!important;
+                float:left!important;
+                margin-top:8px!important;
+                /* display:none; */
+
+            }
+
+            .next
+            {
+                margin-top:8px!important;
+
+
+            }
+        }
+
+    </style>
+
+
 
 
     <section>
+        @php
+        //  echo request()->route('albumid');;exit;
+        @endphp
 
+@php
+ $albid =request()->route('albumid');
+ $id =request()->route('id');
+ $photoobj=new App\Http\Controllers\PhotoController;
+ $photoarr = $photoobj->getphotos($albid);
+// echo $albid;exit;
+
+
+
+//  $finalarr = $albumarr[0];
+
+// var_dump($photoarr);exit;
+// echo $id;exit;
+
+
+$collection = collect($photoarr);
+
+// echo count($collection);
+
+$newcollect = $collection->pluck('id')->toArray();
+
+// var_dump($newcollect);
+// echo count($newcollect);
+
+$current_array_val = array_search($id, $newcollect);
+
+$next_array_val = $current_array_val+1;
+
+$prev_array_val = $current_array_val-1;
+
+if($next_array_val==count($newcollect))
+{
+    // echo "yes";exit;
+    $next_item = $newcollect[0];
+}
+else {
+    $next_item = $newcollect[$next_array_val];
+}
+
+if($prev_array_val<0)
+{
+    $prev_item = $newcollect[0];
+}
+else {
+    $prev_item = $newcollect[$prev_array_val];
+}
+
+
+
+// $next_array_val = $newcollect[$next_array_val];
+
+
+// echo $next_item;
+
+// echo $prev_item;
+// exit;
+
+
+@endphp
 
 
         <div class="heading-section ftco-animate">
+
+            <div class="row mt-3">
+                <div class="col-lg-2 col-3 pt-3 pr-0">
+                  <span class="float-right previous"><a href="{{ url('photos/'. $prev_item .'/'.$albid)}}" class="btn btn-primary ml-3">Previous</a></span>
+                </div>
+                <div class="col-lg-8 col-6 text-center">
+                  {{-- Logo --}} <h2 class="mb-1 text-center" >Photo Details</h2>
+                </div>
+                <div class="col-lg-2 col-3 pt-3 pl-0">
+                  <span class="float-left next"><a href="{{ url('photos/'.$next_item .'/'.$albid)}}" class="btn btn-primary mr-0">Next</a></span>
+                </div>
+              </div>
+
+
+
+
+
+          </div>
             {{-- @dd($photodetails[0]->photo); --}}
+            {{-- <div class="row mt-4">
+                <div class="col-2 pt-3">
+                  <span class="float-right"><a href="{{ url('photos/'. $prev_item .'/'.$albid)}}" class="btn btn-primary ml-3">Previous</a></span>
+                </div>
+                <div class="col-8 text-center">
+                   <h2 class="mb-1 text-center" >Photo Details</h2>
+                </div>
+                <div class="col-2 pt-3">
+                  <span class="float-left"><a href="{{ url('photos/'.$next_item .'/'.$albid)}}" class="btn btn-primary mr-3">Next</a></span>
+                </div>
+              </div> --}}
 
 
-                <h2 class="mb-4 text-center" >Photo Details</h2>
+
+
+
+                {{-- <h2 class="mb-4 text-center" >Photo Details</h2> --}}
 
           </div>
 
@@ -72,11 +192,11 @@
 
                {{-- @dd($photos) --}}
 
-               <div class="item gts col-lg-6 col-md-8 col-6 col-sm text-center">
+               <div class="item gts col-lg-6 col-md-8 col-12 col-sm text-center">
 
                    {{-- <a href="http://restschool.hridham.com/storage/photos/{{ $photodetails[0]->photo }}" class="fancylight" data-fancybox-group="light"> --}}
                    {{-- <img class="img-fluid img-responsive" src="{{ url('storage/photos/'.$photodetails[0]->photo) }}" alt="{{ $photodetails[0]->photo }}" height="100px"> --}}
-                   <img class="img-fluid img-responsive" src="http://restschool.hridham.com/storage/photos/{{ $photodetails[0]->photo }}" alt="{{ $photodetails[0]->photo }}" width="100%" height="100%">
+                   <img class="img-fluid img-responsive" src="http://rest.sparklekidss.com/storage/photos/{{ $photodetails[0]->photo }}" alt="{{ $photodetails[0]->photo }}" width="100%" height="100%">
                    {{-- </a> --}}
 
                      <p>{{ $photodetails[0]->photo_description }}</p>

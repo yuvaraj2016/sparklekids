@@ -29,7 +29,7 @@ class AlbumController extends Controller
         {
 
         $client = new Client();
-        $response = $client->request('GET', 'http://restschool.hridham.com/api/getAllAlbums',
+        $response = $client->request('GET', 'http://rest.sparklekidss.com/api/getAllAlbums',
         []);
 
         //  dd($response);
@@ -84,7 +84,7 @@ class AlbumController extends Controller
 
 
 
-public function paginate($items, $perPage = 8, $page = null, $options = [])
+public function paginate($items, $perPage = 6, $page = null, $options = [])
 {
     $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
     $items = $items instanceof Collection ? $items : Collection::make($items);
@@ -96,7 +96,7 @@ public function paginate($items, $perPage = 8, $page = null, $options = [])
     public function imageresize($path)
     {
 
-        $imgpath = 'http://restschool.hridham.com/storage/cover_pictures/'.$path;
+        $imgpath = 'http://rest.sparklekidss.com/storage/cover_pictures/'.$path;
         if(!file_exists(storage_path()."/app/public/cover_pictures/".$path))
         {
 
@@ -121,7 +121,7 @@ public function paginate($items, $perPage = 8, $page = null, $options = [])
         {
 
         $client = new Client();
-        $response = $client->request('GET', 'http://restschool.hridham.com/api/getAllAlbums',
+        $response = $client->request('GET', 'http://rest.sparklekidss.com/api/getAllAlbums',
         []);
 
         //  dd($response);

@@ -211,7 +211,7 @@ text-shadow: 0 0 3px #FF0000;
 
     .gallerysec img {
 
-        margin-left:33px!important;
+        margin-left:0px!important;
     }
 
     .ptitle
@@ -446,7 +446,7 @@ text-shadow: 0 0 3px #FF0000;
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                     {{-- <span class="flaticon-teacher"></span> --}}
-                    <img src="images/box.png">
+                    <img src="images/box_blue.png" style="width:60px;height:60px;">
 
               </div>
               <div class="media-body p-2 mt-3">
@@ -463,7 +463,7 @@ text-shadow: 0 0 3px #FF0000;
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                     {{-- <span class="flaticon-reading"></span> --}}
-                    <img src="images/parents.png">
+                    <img src="images/Parent_App_Blue.png" style="width:60px;height:60px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Parent App</h3>
@@ -477,7 +477,7 @@ text-shadow: 0 0 3px #FF0000;
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                     {{-- <span class="flaticon-books"></span> --}}
-                    <img src="images/task.png">
+                    <img src="images/Worksheet_blue.png" style="width:60px;height:60px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Daily Worksheets</h3>
@@ -493,7 +493,7 @@ text-shadow: 0 0 3px #FF0000;
             <div class="media block-6 d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
                     {{-- <span class="flaticon-diploma"></span> --}}
-                    <img src="images/school.png">
+                    <img src="images/Montesorri_blue.png" style="width:60px;height:60px;">
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Montessori</h3>
@@ -1311,7 +1311,7 @@ text-shadow: 0 0 3px #FF0000;
 <!--gallery-->
 <section class="ftco-section ftco-no-pb bg-light">
     <div class=" heading-section ftco-animate">
-        <h2 class="mb-4 text-center ptitle" >Gallery</h2>
+        <h2 class="mb-3 text-center ptitle pt-2" >Gallery</h2>
 
       </div>
 
@@ -1415,7 +1415,7 @@ text-shadow: 0 0 3px #FF0000;
                     <a href="{{ url('testimonial/'.$testimonial->id) }}"
                         class="block-20 d-flex align-items-end"
                         style="background-image: url('http://rest.sparklekidss.com/storage/testimonials_picture/{{ $testimonial->testimonial_image }}');">
-                        <div class="meta-date text-center p-2">
+                        <div class="meta-date text-left p-2">
                             <?php
                                       $date= explode('-',$testimonial->testimonial_date);
                                      ?>

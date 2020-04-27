@@ -32,7 +32,7 @@ class PhotoController extends Controller
         {
 
         $client = new Client();
-        $response = $client->request('GET', 'http://restschool.hridham.com/api/albums/'.$id,
+        $response = $client->request('GET', 'http://rest.sparklekidss.com/api/albums/'.$id,
         []);
 
         //  dd($response);
@@ -93,7 +93,7 @@ class PhotoController extends Controller
         {
 
         $client = new Client();
-        $response = $client->request('GET', 'http://restschool.hridham.com/api/photos/'.$id,
+        $response = $client->request('GET', 'http://rest.sparklekidss.com/api/photos/'.$id,
         []);
 
         //  dd($response->getBody());
@@ -149,7 +149,7 @@ class PhotoController extends Controller
 
     }
 
-    public function paginate($items, $perPage = 5, $page = null, $options = [])
+    public function paginate($items, $perPage = 4, $page = null, $options = [])
     {
         $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
         $items = $items instanceof Collection ? $items : Collection::make($items);
@@ -161,7 +161,7 @@ class PhotoController extends Controller
     public function imageresize($path)
     {
 
-        $imgpath = 'http://restschool.hridham.com/storage/photos/'.$path;
+        $imgpath = 'http://rest.sparklekidss.com/storage/photos/'.$path;
 
             // ->fit('250','250', function ($constraint) {
             //     $constraint->upsize();
@@ -180,4 +180,70 @@ class PhotoController extends Controller
 
 
     }
+
+    public function getphotos($id)
+    {
+
+        try
+        {
+
+        $client = new Client();
+        $response = $client->request('GET', 'http://rest.sparklekidss.com/api/albums/'.$id,
+        []);
+
+        //  dd($response);
+        //  return false;
+
+        if($response->getStatusCode() === 200)
+        {
+            //  echo $response->getBody();
+
+            $photodata = json_decode($response->getBody());
+            $data = $photodata->photos;
+            // $albumdata = $photodata->data;
+
+            // dd($data);
+            // exit;
+
+            //  echo Session::get('access_token');
+            //  return false;
+            return $data;
+
+            // return view('photo',['photos'=>$data,'albumdata'=>$albumdata]);
+
+        }
+
+        }
+        catch(BadResponseException $ex)
+        {
+            $data = json_decode($ex->getResponse()->getBody()->getContents(), true);
+            $errors = [];
+
+            // session()->forget('access_token');
+
+            foreach($data as $k=>$v)
+                $errors[$k]=$v;
+            return view('photo')->with('error',"Error! There is an error in album images loading");
+            //return view('auth.register')->with(['error'=>$errors]);
+        }
+        if($response->getStatusCode() == 201)
+        {
+            $albums = json_decode($response->getBody(),true);
+
+            //  echo Session::get('access_token');
+            //  return false;
+            return $albums;
+            // return view('photo',['photos'=>$data]);
+            // return redirect('/gallery')->with('success','Successfully Registered');
+        }
+        else
+        {
+            return 'Internal Server Error!<br>Check api/albums/id<br>'.$response;
+        }
+
+
+    }
+
+
+
 }
