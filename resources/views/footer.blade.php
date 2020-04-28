@@ -81,10 +81,10 @@
           </div>-->
           <div class="ftco-footer-widget mb-1">
               <h2 class="ftco-heading-2 mb-0 connect">Connect With Us</h2>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="https://www.facebook.com/thoraipakkamomr1/"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="https://www.instagram.com/sparklekidsschennai/"><span class="icon-instagram"></span></a></li>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-left mt-3">
+              <li class=""><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class=""><a href="https://www.facebook.com/thoraipakkamomr1/"><span class="icon-facebook"></span></a></li>
+              <li class=""><a href="https://www.instagram.com/sparklekidsschennai/"><span class="icon-instagram"></span></a></li>
             </ul>
           </div>
         </div>

@@ -105,7 +105,7 @@ else {
                   <span class="float-right previous"><a href="{{ url('photos/'. $prev_item .'/'.$albid)}}" class="btn btn-primary ml-3">Previous</a></span>
                 </div>
                 <div class="col-lg-8 col-6 text-center">
-                  {{-- Logo --}} <h2 class="mb-1 text-center" >Photo Details</h2>
+                  {{-- Logo --}} <h2 class="mb-1 text-center" >Photo <br>Details</h2>
                 </div>
                 <div class="col-lg-2 col-3 pt-3 pl-0">
                   <span class="float-left next"><a href="{{ url('photos/'.$next_item .'/'.$albid)}}" class="btn btn-primary mr-0">Next</a></span>
